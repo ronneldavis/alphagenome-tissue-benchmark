@@ -1,7 +1,11 @@
 # bioRxiv submission sheet
 
-Prepared 11 September 2026. This is what will be entered into the bioRxiv submission form.
-Correct anything that is wrong before the final submit.
+**Submitted 11 September 2026. Manuscript ID BIORXIV/2026/750799, version 1, now in bioRxiv
+screening.** Track it in the Author Area at https://submit.biorxiv.org under "Manuscripts
+Undergoing Screening". An acknowledgement email goes to ronnel@onvo.ai, and the preprint appears
+publicly with a DOI if it passes screening, normally within one to two working days.
+
+Below is what was entered.
 
 | Field | Value |
 |---|---|
