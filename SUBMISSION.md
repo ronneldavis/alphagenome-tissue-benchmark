@@ -16,7 +16,7 @@ Below is what to enter.
 |---|---|
 | Title | Per-variant tissue assignment by a sequence-to-function model is limited by effect detectability more than by assay coverage |
 | Author | Ronnel Davis, sole author and corresponding author |
-| Affiliation | Onvo, Guidenco Inc., Delaware, USA |
+| Affiliation | Guidenco Inc., Delaware, USA |
 | Email | ronnel@onvo.ai (account email and manuscript correspondence address, now consistent) |
 | ORCID | to be supplied (or logged in through ORCID) |
 | Subject category | Genomics |
@@ -36,5 +36,5 @@ Sequence-to-function models predict tissue-resolved regulatory activity from DNA
 
 ## Notes
 
-- bioRxiv screens every submission and may ask the corresponding author to verify their identity, which is more common for authors without a university address. A company domain email (ronnel@onvo.ai) helps here. Onvo is the product name and Guidenco Inc. the legal entity, which is why the affiliation names both: it keeps the email domain from looking unrelated to the stated organization. Expect a delay of one to two working days before the preprint appears.
+- bioRxiv screens every submission and may ask the corresponding author to verify their identity, which is more common for authors without a university address. A company domain email (ronnel@onvo.ai) helps here. Expect a delay of one to two working days before the preprint appears.
 - bioRxiv will offer to forward the manuscript to a journal during submission. Decline it; pick the journal deliberately later.
