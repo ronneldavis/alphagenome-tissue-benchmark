@@ -5,12 +5,18 @@ returned without review because the affiliation field was left as "None". bioRxi
 submission to carry an organizational affiliation, so that some organization can adjudicate ethical
 issues or disputes. Nothing about the manuscript itself was at issue.
 
-**Resubmitting with Guidenco Inc. as the affiliation.** This is a new submission, not an appeal, so it gets
-a new manuscript ID. Start it at https://submit.biorxiv.org. An acknowledgement email goes to
-ronnel@onvo.ai, and the preprint appears publicly with a DOI if it passes screening, normally
-within one to two working days.
+**Resubmitted as BIORXIV/2026/750958 on 11 September 2026, with Guidenco Inc. as the affiliation.**
+This is a new submission, not an appeal, so it carries a new manuscript ID. Every section is filled
+and main.pdf is uploaded and converted; the submission sits at Submission Proofing awaiting the
+author's "Approve Manuscript" click. An acknowledgement email goes to ronnel@onvo.ai, and the
+preprint appears publicly with a DOI if it passes screening, normally within one to two working
+days.
 
-Below is what to enter.
+The root cause of the first rejection was the account profile, not the submission form: the
+Institution field in the bioRxiv Personal Info Area read "None" and prefilled into the submission.
+That field is now "Guidenco Inc.".
+
+Below is what was entered.
 
 | Field | Value |
 |---|---|
