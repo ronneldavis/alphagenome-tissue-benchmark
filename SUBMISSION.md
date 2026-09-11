@@ -1,17 +1,22 @@
 # bioRxiv submission sheet
 
-**Submitted 11 September 2026. Manuscript ID BIORXIV/2026/750799, version 1, now in bioRxiv
-screening.** Track it in the Author Area at https://submit.biorxiv.org under "Manuscripts
-Undergoing Screening". An acknowledgement email goes to ronnel@onvo.ai, and the preprint appears
-publicly with a DOI if it passes screening, normally within one to two working days.
+**Rejected at screening 11 September 2026.** The first attempt, BIORXIV/2026/750799, was
+returned without review because the affiliation field was left as "None". bioRxiv requires every
+submission to carry an organizational affiliation, so that some organization can adjudicate ethical
+issues or disputes. Nothing about the manuscript itself was at issue.
 
-Below is what was entered.
+**Resubmitting with Onvo as the affiliation.** This is a new submission, not an appeal, so it gets
+a new manuscript ID. Start it at https://submit.biorxiv.org. An acknowledgement email goes to
+ronnel@onvo.ai, and the preprint appears publicly with a DOI if it passes screening, normally
+within one to two working days.
+
+Below is what to enter.
 
 | Field | Value |
 |---|---|
 | Title | Per-variant tissue assignment by a sequence-to-function model is limited by effect detectability more than by assay coverage |
 | Author | Ronnel Davis, sole author and corresponding author |
-| Affiliation | Independent researcher |
+| Affiliation | Onvo |
 | Email | ronnel@onvo.ai (account email and manuscript correspondence address, now consistent) |
 | ORCID | to be supplied (or logged in through ORCID) |
 | Subject category | Genomics |
@@ -31,5 +36,5 @@ Sequence-to-function models predict tissue-resolved regulatory activity from DNA
 
 ## Notes
 
-- bioRxiv screens every submission and may ask the corresponding author to verify their identity, which is more common for authors without an institutional address. Expect a delay of one to two working days before the preprint appears.
+- bioRxiv screens every submission and may ask the corresponding author to verify their identity, which is more common for authors without a university address. A company domain email (ronnel@onvo.ai) that matches the stated affiliation helps here. Expect a delay of one to two working days before the preprint appears.
 - bioRxiv will offer to forward the manuscript to a journal during submission. Decline it; pick the journal deliberately later.
