@@ -1,0 +1,306 @@
+name,strand,Assay title,ontology_curie,biosample_name,biosample_type,biosample_life_stage,data_source,endedness,genetically_modified,nonzero_mean,grp
+CL:0000047 DNase-seq,.,DNase-seq,CL:0000047,neuronal stem cell,in_vitro_differentiated_cells,embryonic,encode,single,False,1.5545012950897217,BRAIN
+CL:0000084 DNase-seq,.,DNase-seq,CL:0000084,T-cell,primary_cell,adult,encode,paired,False,0.15140396356582642,
+CL:0000115 DNase-seq,.,DNase-seq,CL:0000115,endothelial cell,in_vitro_differentiated_cells,adult,encode,paired,False,0.5130283832550049,
+CL:0000127 DNase-seq,.,DNase-seq,CL:0000127,astrocyte,primary_cell,unknown,encode,single,False,0.8457521796226501,BRAIN
+CL:0000134 DNase-seq,.,DNase-seq,CL:0000134,mesenchymal stem cell,in_vitro_differentiated_cells,embryonic,encode,paired,False,0.5400440096855164,
+CL:0000136 DNase-seq,.,DNase-seq,CL:0000136,adipocyte,in_vitro_differentiated_cells,unknown,encode,paired,False,0.5403468608856201,ADIPOSE
+CL:0000138 DNase-seq,.,DNase-seq,CL:0000138,chondrocyte,in_vitro_differentiated_cells,embryonic,encode,paired,False,0.45273175835609436,
+CL:0000182 DNase-seq,.,DNase-seq,CL:0000182,hepatocyte,in_vitro_differentiated_cells,embryonic,encode,paired,False,0.30756181478500366,LIVER
+CL:0000187 DNase-seq,.,DNase-seq,CL:0000187,myocyte,in_vitro_differentiated_cells,adult,encode,paired,False,0.80037522315979,MUSCLE
+CL:0000188 DNase-seq,.,DNase-seq,CL:0000188,skeletal muscle cell,primary_cell,unknown,encode,single,False,4.767265319824219,MUSCLE
+CL:0000223 DNase-seq,.,DNase-seq,CL:0000223,endodermal cell,in_vitro_differentiated_cells,embryonic,encode,paired,False,0.36153507232666016,
+CL:0000236 DNase-seq,.,DNase-seq,CL:0000236,B cell,primary_cell,adult,encode,paired,False,0.4363890588283539,IMMUNE
+CL:0000312 DNase-seq,.,DNase-seq,CL:0000312,keratinocyte,primary_cell,unknown,encode,single,False,2.104659080505371,SKIN
+CL:0000351 DNase-seq,.,DNase-seq,CL:0000351,trophoblast cell,primary_cell,embryonic,encode,paired,False,0.35272279381752014,IMMUNE
+CL:0000515 DNase-seq,.,DNase-seq,CL:0000515,skeletal muscle myoblast,primary_cell,unknown,encode,paired,False,0.47691610455513,MUSCLE
+CL:0000545 DNase-seq,.,DNase-seq,CL:0000545,T-helper 1 cell,primary_cell,adult,encode,paired,False,0.35502371191978455,
+CL:0000546 DNase-seq,.,DNase-seq,CL:0000546,T-helper 2 cell,primary_cell,adult,encode,paired,False,0.45415040850639343,
+CL:0000623 DNase-seq,.,DNase-seq,CL:0000623,natural killer cell,primary_cell,adult,encode,paired,False,1.329219102859497,IMMUNE
+CL:0000624 DNase-seq,.,DNase-seq,CL:0000624,"CD4-positive, alpha-beta T cell",primary_cell,adult,encode,paired,False,0.24718108773231506,IMMUNE
+CL:0000625 DNase-seq,.,DNase-seq,CL:0000625,"CD8-positive, alpha-beta T cell",primary_cell,adult,encode,paired,False,0.245092511177063,IMMUNE
+CL:0000632 DNase-seq,.,DNase-seq,CL:0000632,hepatic stellate cell,primary_cell,adult,encode,single,False,1.1046535968780518,
+CL:0000653 DNase-seq,.,DNase-seq,CL:0000653,glomerular visceral epithelial cell,primary_cell,child,encode,paired,False,0.33863624930381775,
+CL:0000679 DNase-seq,.,DNase-seq,CL:0000679,glutamatergic neuron,in_vitro_differentiated_cells,adult,encode,paired,False,0.6777439713478088,BRAIN
+CL:0000706 DNase-seq,.,DNase-seq,CL:0000706,choroid plexus epithelial cell,primary_cell,unknown,encode,single,False,0.9258599281311035,
+CL:0000746 DNase-seq,.,DNase-seq,CL:0000746,cardiac muscle cell,primary_cell,unknown,encode,single,False,0.9656065702438354,HEART
+CL:0000787 DNase-seq,.,DNase-seq,CL:0000787,memory B cell,primary_cell,adult,encode,paired,False,0.5707800388336182,IMMUNE
+CL:0000788 DNase-seq,.,DNase-seq,CL:0000788,naive B cell,primary_cell,unknown,encode,paired,False,1.8952505588531494,IMMUNE
+CL:0000792 DNase-seq,.,DNase-seq,CL:0000792,"CD4-positive, CD25-positive, alpha-beta regulatory T cell",primary_cell,adult,encode,paired,False,0.6506157517433167,IMMUNE
+CL:0000823 DNase-seq,.,DNase-seq,CL:0000823,immature natural killer cell,primary_cell,unknown,encode,paired,False,0.9085276126861572,IMMUNE
+CL:0000837 DNase-seq,.,DNase-seq,CL:0000837,hematopoietic multipotent progenitor cell,in_vitro_differentiated_cells,adult,encode,paired,False,0.4876305162906647,
+CL:0000862 DNase-seq,.,DNase-seq,CL:0000862,suppressor macrophage,primary_cell,adult,encode,paired,False,0.23590947687625885,IMMUNE
+CL:0000863 DNase-seq,.,DNase-seq,CL:0000863,inflammatory macrophage,primary_cell,adult,encode,paired,False,0.6210137605667114,IMMUNE
+CL:0000895 DNase-seq,.,DNase-seq,CL:0000895,"naive thymus-derived CD4-positive, alpha-beta T cell",primary_cell,adult,encode,paired,False,0.5822393894195557,IMMUNE
+CL:0000897 DNase-seq,.,DNase-seq,CL:0000897,"CD4-positive, alpha-beta memory T cell",primary_cell,adult,encode,paired,False,3.524648904800415,IMMUNE
+CL:0000899 DNase-seq,.,DNase-seq,CL:0000899,T-helper 17 cell,primary_cell,adult,encode,paired,False,0.7438492774963379,
+CL:0000900 DNase-seq,.,DNase-seq,CL:0000900,"naive thymus-derived CD8-positive, alpha-beta T cell",primary_cell,adult,encode,paired,False,0.4006246030330658,IMMUNE
+CL:0000904 DNase-seq,.,DNase-seq,CL:0000904,"central memory CD4-positive, alpha-beta T cell",primary_cell,adult,encode,paired,False,1.6689720153808594,IMMUNE
+CL:0000905 DNase-seq,.,DNase-seq,CL:0000905,"effector memory CD4-positive, alpha-beta T cell",primary_cell,adult,encode,paired,False,1.3759067058563232,IMMUNE
+CL:0000907 DNase-seq,.,DNase-seq,CL:0000907,"central memory CD8-positive, alpha-beta T cell",primary_cell,adult,encode,paired,False,0.6267991065979004,IMMUNE
+CL:0000909 DNase-seq,.,DNase-seq,CL:0000909,"CD8-positive, alpha-beta memory T cell",primary_cell,adult,encode,paired,False,0.8454427719116211,IMMUNE
+CL:0000913 DNase-seq,.,DNase-seq,CL:0000913,"effector memory CD8-positive, alpha-beta T cell",primary_cell,adult,encode,paired,False,0.5821823477745056,IMMUNE
+CL:0001042 DNase-seq,.,DNase-seq,CL:0001042,T-helper 22 cell,primary_cell,adult,encode,paired,False,4.007289886474609,
+CL:0001044 DNase-seq,.,DNase-seq,CL:0001044,"effector CD4-positive, alpha-beta T cell",primary_cell,adult,encode,paired,False,1.9604204893112183,IMMUNE
+CL:0001054 DNase-seq,.,DNase-seq,CL:0001054,CD14-positive monocyte,primary_cell,adult,encode,paired,False,0.3832496404647827,IMMUNE
+CL:0001059 DNase-seq,.,DNase-seq,CL:0001059,"common myeloid progenitor, CD34-positive",primary_cell,adult,encode,paired,False,0.8163495063781738,
+CL:0002038 DNase-seq,.,DNase-seq,CL:0002038,T follicular helper cell,primary_cell,adult,encode,paired,False,4.746370315551758,
+CL:0002061 DNase-seq,.,DNase-seq,CL:0002061,T-helper 9 cell,primary_cell,adult,encode,paired,False,2.6681625843048096,
+CL:0002231 DNase-seq,.,DNase-seq,CL:0002231,epithelial cell of prostate,primary_cell,unknown,encode,single,False,1.79982590675354,
+CL:0002252 DNase-seq,.,DNase-seq,CL:0002252,epithelial cell of esophagus,primary_cell,unknown,encode,single,False,0.6855566501617432,
+CL:0002304 DNase-seq,.,DNase-seq,CL:0002304,non-pigmented ciliary epithelial cell,primary_cell,unknown,encode,single,False,3.0522754192352295,
+CL:0002306 DNase-seq,.,DNase-seq,CL:0002306,epithelial cell of proximal tubule,primary_cell,unknown,encode,single,False,2.5602056980133057,
+CL:0002327 DNase-seq,.,DNase-seq,CL:0002327,mammary epithelial cell,primary_cell,adult,encode,paired,False,0.6776365637779236,
+CL:0002328 DNase-seq,.,DNase-seq,CL:0002328,bronchial epithelial cell,primary_cell,unknown,encode,single,False,0.7579159140586853,LUNG
+CL:0002351 DNase-seq,.,DNase-seq,CL:0002351,progenitor cell of endocrine pancreas,in_vitro_differentiated_cells,embryonic,encode,paired,False,1.0526008605957031,ISLET
+CL:0002372 DNase-seq,.,DNase-seq,CL:0002372,myotube,in_vitro_differentiated_cells,unknown,encode,single,False,2.400099754333496,MUSCLE
+CL:0002518 DNase-seq,.,DNase-seq,CL:0002518,kidney epithelial cell,primary_cell,unknown,encode,single,False,2.745112657546997,
+CL:0002536 DNase-seq,.,DNase-seq,CL:0002536,amniotic epithelial cell,primary_cell,unknown,encode,single,False,0.9171459078788757,
+CL:0002547 DNase-seq,.,DNase-seq,CL:0002547,fibroblast of the aortic adventitia,primary_cell,unknown,encode,single,False,0.6756204962730408,
+CL:0002548 DNase-seq,.,DNase-seq,CL:0002548,cardiac fibroblast,primary_cell,adult,encode,paired,False,0.6222532987594604,HEART
+CL:0002550 DNase-seq,.,DNase-seq,CL:0002550,fibroblast of the conjunctiva,primary_cell,unknown,encode,single,False,2.0065205097198486,
+CL:0002551 DNase-seq,.,DNase-seq,CL:0002551,fibroblast of dermis,primary_cell,adult,encode,single,False,1.079167366027832,SKIN
+CL:0002552 DNase-seq,.,DNase-seq,CL:0002552,fibroblast of gingiva,primary_cell,unknown,encode,paired,False,0.5092926621437073,
+CL:0002553 DNase-seq,.,DNase-seq,CL:0002553,fibroblast of lung,primary_cell,adult,encode,single,False,0.7885729074478149,
+CL:0002555 DNase-seq,.,DNase-seq,CL:0002555,fibroblast of mammary gland,primary_cell,unknown,encode,single,False,0.8995188474655151,
+CL:0002557 DNase-seq,.,DNase-seq,CL:0002557,fibroblast of pulmonary artery,primary_cell,unknown,encode,single,False,0.9265996813774109,ARTERY
+CL:0002558 DNase-seq,.,DNase-seq,CL:0002558,fibroblast of villous mesenchyme,primary_cell,unknown,encode,single,False,0.7923138737678528,
+CL:0002565 DNase-seq,.,DNase-seq,CL:0002565,iris pigment epithelial cell,primary_cell,unknown,encode,single,False,0.7827289700508118,
+CL:0002584 DNase-seq,.,DNase-seq,CL:0002584,renal cortical epithelial cell,primary_cell,unknown,encode,single,False,0.8318119049072266,
+CL:0002586 DNase-seq,.,DNase-seq,CL:0002586,retinal pigment epithelial cell,primary_cell,unknown,encode,single,False,2.909048318862915,
+CL:0002590 DNase-seq,.,DNase-seq,CL:0002590,smooth muscle cell of the brain vasculature,primary_cell,unknown,encode,single,False,2.438349962234497,ARTERY
+CL:0002603 DNase-seq,.,DNase-seq,CL:0002603,astrocyte of the cerebellum,primary_cell,unknown,encode,single,False,1.9216886758804321,BRAIN
+CL:0002604 DNase-seq,.,DNase-seq,CL:0002604,astrocyte of the hippocampus,primary_cell,unknown,encode,single,False,0.5650158524513245,BRAIN
+CL:0002606 DNase-seq,.,DNase-seq,CL:0002606,astrocyte of the spinal cord,primary_cell,unknown,encode,single,False,0.8070069551467896,BRAIN
+CL:0002618 DNase-seq,.,DNase-seq,CL:0002618,endothelial cell of umbilical vein,primary_cell,newborn,encode,single,False,0.37584367394447327,ARTERY
+CL:0010001 DNase-seq,.,DNase-seq,CL:0010001,stromal cell of bone marrow,primary_cell,unknown,encode,single,False,2.691941738128662,
+CL:0011012 DNase-seq,.,DNase-seq,CL:0011012,neural crest cell,in_vitro_differentiated_cells,embryonic,encode,paired,False,0.8980225324630737,IMMUNE
+CL:0011019 DNase-seq,.,DNase-seq,CL:0011019,mesothelial cell of epicardium,in_vitro_differentiated_cells,embryonic,encode,paired,False,0.6035394072532654,
+CL:0011020 DNase-seq,.,DNase-seq,CL:0011020,neural progenitor cell,in_vitro_differentiated_cells,embryonic,encode,paired,False,0.4942465126514435,
+CL:0011021 DNase-seq,.,DNase-seq,CL:0011021,fibroblast of upper back skin,primary_cell,embryonic,encode,paired,False,0.9696041941642761,
+CL:0011022 DNase-seq,.,DNase-seq,CL:0011022,fibroblast of skin of back,primary_cell,embryonic,encode,paired,False,0.8348377346992493,
+CL:1000507 DNase-seq,.,DNase-seq,CL:1000507,kidney tubule cell,primary_cell,adult,encode,paired,False,0.5207222700119019,
+CL:1000892 DNase-seq,.,DNase-seq,CL:1000892,kidney capillary endothelial cell,primary_cell,embryonic,encode,paired,False,0.8645994663238525,
+CL:1001568 DNase-seq,.,DNase-seq,CL:1001568,pulmonary artery endothelial cell,primary_cell,unknown,encode,single,False,3.48999285697937,ARTERY
+CL:1001606 DNase-seq,.,DNase-seq,CL:1001606,foreskin keratinocyte,primary_cell,newborn,encode,paired,False,0.8092641830444336,SKIN
+CL:1001608 DNase-seq,.,DNase-seq,CL:1001608,foreskin fibroblast,primary_cell,newborn,encode,single,False,0.6006089448928833,SKIN
+CL:2000000 DNase-seq,.,DNase-seq,CL:2000000,epidermal melanocyte,primary_cell,unknown,encode,single,False,2.429208517074585,SKIN
+CL:2000010 DNase-seq,.,DNase-seq,CL:2000010,dermis blood vessel endothelial cell,primary_cell,newborn,encode,single,False,0.6149095892906189,
+CL:2000013 DNase-seq,.,DNase-seq,CL:2000013,fibroblast of skin of abdomen,primary_cell,embryonic,encode,paired,False,0.7902196049690247,
+CL:2000016 DNase-seq,.,DNase-seq,CL:2000016,lung microvascular endothelial cell,primary_cell,unknown,encode,paired,False,0.5494294166564941,ARTERY
+CL:2000017 DNase-seq,.,DNase-seq,CL:2000017,fibroblast of peridontal ligament,primary_cell,unknown,encode,single,False,0.766350269317627,
+CL:2000041 DNase-seq,.,DNase-seq,CL:2000041,dermis microvascular lymphatic vessel endothelial cell,primary_cell,unknown,encode,single,False,0.5694506764411926,ARTERY
+CL:2000043 DNase-seq,.,DNase-seq,CL:2000043,brain pericyte,primary_cell,unknown,encode,single,False,3.447007656097412,BRAIN
+CL:2000044 DNase-seq,.,DNase-seq,CL:2000044,brain microvascular endothelial cell,primary_cell,unknown,encode,paired,False,0.8649314045906067,ARTERY
+CL:2000045 DNase-seq,.,DNase-seq,CL:2000045,foreskin melanocyte,primary_cell,newborn,encode,single,False,1.6665078401565552,SKIN
+CLO:0003771 DNase-seq,.,DNase-seq,CLO:0003771,HK-2,cell_line,unknown,encode,paired,False,1.9446057081222534,
+CLO:0007045 DNase-seq,.,DNase-seq,CLO:0007045,"Jurkat, Clone E6-1",cell_line,child,encode,single,False,1.5674571990966797,
+CLO:0011092 DNase-seq,.,DNase-seq,CLO:0011092,AG20443,cell_line,adult,encode,single,False,0.489742636680603,
+CLO:0016536 DNase-seq,.,DNase-seq,CLO:0016536,GM03348,cell_line,child,encode,single,False,0.6024907827377319,
+CLO:0018812 DNase-seq,.,DNase-seq,CLO:0018812,GM04504,cell_line,adult,encode,single,False,2.7088184356689453,
+CLO:0018813 DNase-seq,.,DNase-seq,CLO:0018813,GM04503,cell_line,adult,encode,single,False,2.5049474239349365,
+CLO:0021511 DNase-seq,.,DNase-seq,CLO:0021511,AG10803,cell_line,adult,encode,single,False,1.0066683292388916,
+CLO:0021752 DNase-seq,.,DNase-seq,CLO:0021752,AG09309,cell_line,adult,encode,single,False,2.8119919300079346,
+CLO:0021754 DNase-seq,.,DNase-seq,CLO:0021754,AG09319,cell_line,adult,encode,single,False,3.7290589809417725,
+CLO:0033902 DNase-seq,.,DNase-seq,CLO:0033902,AG08396,cell_line,adult,encode,single,False,0.7557680010795593,
+CLO:0033911 DNase-seq,.,DNase-seq,CLO:0033911,AG08395,cell_line,adult,encode,single,False,0.5651062726974487,
+CLO:0034837 DNase-seq,.,DNase-seq,CLO:0034837,AG04449,cell_line,embryonic,encode,single,False,2.6723761558532715,
+EFO:0000681 DNase-seq,.,DNase-seq,EFO:0000681,RCC,cell_line,adult,encode,paired,False,0.404991090297699,
+EFO:0001086 DNase-seq,.,DNase-seq,EFO:0001086,A549,cell_line,unknown,encode,single,False,1.3698084354400635,LUNG
+EFO:0001099 DNase-seq,.,DNase-seq,EFO:0001099,Caco-2,cell_line,adult,encode,paired,False,0.35403701663017273,INTESTINE
+EFO:0001187 DNase-seq,.,DNase-seq,EFO:0001187,HepG2,cell_line,child,encode,paired,False,0.5917545557022095,LIVER
+EFO:0001193 DNase-seq,.,DNase-seq,EFO:0001193,HT-29,cell_line,adult,encode,paired,False,0.31434935331344604,INTESTINE
+EFO:0001196 DNase-seq,.,DNase-seq,EFO:0001196,IMR-90,cell_line,embryonic,encode,single,False,0.5586584210395813,
+EFO:0001200 DNase-seq,.,DNase-seq,EFO:0001200,MCF 10A,cell_line,adult,encode,paired,False,0.6995792388916016,
+EFO:0001203 DNase-seq,.,DNase-seq,EFO:0001203,MCF-7,cell_line,adult,encode,single,False,1.527384877204895,
+EFO:0001221 DNase-seq,.,DNase-seq,EFO:0001221,NCI-H929,cell_line,adult,encode,paired,False,0.6527357697486877,
+EFO:0001232 DNase-seq,.,DNase-seq,EFO:0001232,RKO,cell_line,unknown,encode,paired,False,0.39124998450279236,
+EFO:0001247 DNase-seq,.,DNase-seq,EFO:0001247,T47D,cell_line,adult,encode,paired,False,0.7594418525695801,
+EFO:0002059 DNase-seq,.,DNase-seq,EFO:0002059,HT1080,cell_line,adult,encode,paired,False,0.5158950686454773,
+EFO:0002067 DNase-seq,.,DNase-seq,EFO:0002067,K562,cell_line,adult,encode,paired,False,0.7512144446372986,
+EFO:0002074 DNase-seq,.,DNase-seq,EFO:0002074,PC-3,cell_line,adult,encode,paired,False,0.33056098222732544,
+EFO:0002083 DNase-seq,.,DNase-seq,EFO:0002083,SW480,cell_line,adult,encode,paired,False,0.5017459988594055,
+EFO:0002101 DNase-seq,.,DNase-seq,EFO:0002101,A172,cell_line,adult,encode,paired,False,0.6259351372718811,
+EFO:0002106 DNase-seq,.,DNase-seq,EFO:0002106,A673,cell_line,child,encode,paired,False,0.4033849537372589,
+EFO:0002108 DNase-seq,.,DNase-seq,EFO:0002108,ACHN,cell_line,adult,encode,paired,False,0.39731329679489136,
+EFO:0002140 DNase-seq,.,DNase-seq,EFO:0002140,COLO829,cell_line,adult,encode,single,False,1.0428472757339478,
+EFO:0002150 DNase-seq,.,DNase-seq,EFO:0002150,Caki2,cell_line,adult,encode,paired,False,0.8169956803321838,
+EFO:0002179 DNase-seq,.,DNase-seq,EFO:0002179,G401,cell_line,child,encode,paired,False,0.3348170220851898,
+EFO:0002184 DNase-seq,.,DNase-seq,EFO:0002184,H4,cell_line,adult,encode,paired,False,0.2589706480503082,
+EFO:0002234 DNase-seq,.,DNase-seq,EFO:0002234,MG63,cell_line,child,encode,paired,False,1.3897887468338013,
+EFO:0002246 DNase-seq,.,DNase-seq,EFO:0002246,NAMALWA,cell_line,child,encode,paired,False,0.24920177459716797,
+EFO:0002285 DNase-seq,.,DNase-seq,EFO:0002285,NCI-H226,cell_line,adult,encode,paired,False,0.6913072466850281,
+EFO:0002322 DNase-seq,.,DNase-seq,EFO:0002322,RPMI8226,cell_line,adult,encode,paired,False,0.46553540229797363,
+EFO:0002323 DNase-seq,.,DNase-seq,EFO:0002323,RWPE1,cell_line,adult,encode,single,False,1.0728051662445068,
+EFO:0002330 DNase-seq,.,DNase-seq,EFO:0002330,SJSA1,cell_line,adult,encode,paired,False,0.2602348327636719,
+EFO:0002713 DNase-seq,.,DNase-seq,EFO:0002713,Panc1,cell_line,adult,encode,single,False,2.7078969478607178,
+EFO:0002779 DNase-seq,.,DNase-seq,EFO:0002779,BJ,cell_line,newborn,encode,single,False,3.066230535507202,
+EFO:0002783 DNase-seq,.,DNase-seq,EFO:0002783,GM06990,cell_line,unknown,encode,single,False,1.4070837497711182,
+EFO:0002784 DNase-seq,.,DNase-seq,EFO:0002784,GM12878,cell_line,adult,encode,single,False,1.973615050315857,IMMUNE
+EFO:0002785 DNase-seq,.,DNase-seq,EFO:0002785,GM12891,cell_line,unknown,encode,single,False,2.2426021099090576,
+EFO:0002788 DNase-seq,.,DNase-seq,EFO:0002788,GM19238,cell_line,unknown,encode,single,False,2.614777088165283,
+EFO:0002789 DNase-seq,.,DNase-seq,EFO:0002789,GM19239,cell_line,unknown,encode,single,False,2.127342700958252,
+EFO:0002790 DNase-seq,.,DNase-seq,EFO:0002790,GM19240,cell_line,unknown,encode,single,False,3.142216920852661,
+EFO:0002791 DNase-seq,.,DNase-seq,EFO:0002791,HeLa-S3,cell_line,adult,encode,paired,False,0.6147698163986206,
+EFO:0002793 DNase-seq,.,DNase-seq,EFO:0002793,HL-60,cell_line,adult,encode,paired,False,0.4432883858680725,
+EFO:0002798 DNase-seq,.,DNase-seq,EFO:0002798,NB4,cell_line,adult,encode,single,False,0.5139434337615967,
+EFO:0002819 DNase-seq,.,DNase-seq,EFO:0002819,Calu3,cell_line,adult,encode,paired,False,0.8454360961914062,
+EFO:0002824 DNase-seq,.,DNase-seq,EFO:0002824,HCT116,cell_line,adult,encode,single,False,2.3007709980010986,
+EFO:0002847 DNase-seq,.,DNase-seq,EFO:0002847,PC-9,cell_line,unknown,encode,paired,False,1.1961363554000854,
+EFO:0002860 DNase-seq,.,DNase-seq,EFO:0002860,SK-N-MC,cell_line,child,encode,single,False,2.3146300315856934,
+EFO:0003037 DNase-seq,.,DNase-seq,EFO:0003037,CMK,cell_line,child,encode,single,False,5.96456241607666,
+EFO:0003042 DNase-seq,.,DNase-seq,EFO:0003042,H1,cell_line,embryonic,encode,paired,False,0.35558420419692993,
+EFO:0003044 DNase-seq,.,DNase-seq,EFO:0003044,NCI-H460,cell_line,unknown,encode,paired,False,2.7118191719055176,
+EFO:0003045 DNase-seq,.,DNase-seq,EFO:0003045,H9,cell_line,embryonic,encode,paired,False,0.36124664545059204,
+EFO:0003072 DNase-seq,.,DNase-seq,EFO:0003072,SK-N-SH,cell_line,child,encode,single,False,0.697295069694519,
+EFO:0005236 DNase-seq,.,DNase-seq,EFO:0005236,NT2/D1,cell_line,unknown,encode,single,False,2.16270112991333,
+EFO:0005282 DNase-seq,.,DNase-seq,EFO:0005282,HS-5,cell_line,adult,encode,single,False,3.068507671356201,
+EFO:0005283 DNase-seq,.,DNase-seq,EFO:0005283,HS-27A,cell_line,adult,encode,single,False,3.3722217082977295,
+EFO:0005337 DNase-seq,.,DNase-seq,EFO:0005337,GM12864,cell_line,unknown,encode,single,False,5.519004821777344,
+EFO:0005338 DNase-seq,.,DNase-seq,EFO:0005338,GM12865,cell_line,unknown,encode,single,False,0.7618824243545532,
+EFO:0005345 DNase-seq,.,DNase-seq,EFO:0005345,GM13976,cell_line,unknown,encode,single,False,0.5067197680473328,
+EFO:0005352 DNase-seq,.,DNase-seq,EFO:0005352,GM20000,cell_line,child,encode,single,False,0.5614458322525024,
+EFO:0005384 DNase-seq,.,DNase-seq,EFO:0005384,HuH-7,cell_line,adult,encode,single,False,1.326578140258789,
+EFO:0005696 DNase-seq,.,DNase-seq,EFO:0005696,D721Med,cell_line,child,encode,single,False,3.3585827350616455,
+EFO:0005697 DNase-seq,.,DNase-seq,EFO:0005697,M059J,cell_line,adult,encode,paired,False,0.679729163646698,
+EFO:0005698 DNase-seq,.,DNase-seq,EFO:0005698,Daoy,cell_line,child,encode,paired,False,0.663628876209259,
+EFO:0005704 DNase-seq,.,DNase-seq,EFO:0005704,HuH-7.5,cell_line,adult,encode,single,False,1.8704612255096436,
+EFO:0005707 DNase-seq,.,DNase-seq,EFO:0005707,RCC 7860,cell_line,adult,encode,paired,False,0.38709786534309387,
+EFO:0005709 DNase-seq,.,DNase-seq,EFO:0005709,HTR-8/SVneo,cell_line,embryonic,encode,single,False,1.2438695430755615,
+EFO:0005710 DNase-seq,.,DNase-seq,EFO:0005710,HFF-Myc,cell_line,newborn,encode,single,False,2.5209357738494873,
+EFO:0005712 DNase-seq,.,DNase-seq,EFO:0005712,RPMI7951,cell_line,adult,encode,paired,False,0.750880241394043,
+EFO:0005714 DNase-seq,.,DNase-seq,EFO:0005714,LHCN-M2,cell_line,adult,encode,paired,False,1.0306603908538818,
+EFO:0005715 DNase-seq,.,DNase-seq,EFO:0005715,WERI-Rb-1,cell_line,child,encode,paired,False,0.5877436399459839,
+EFO:0005719 DNase-seq,.,DNase-seq,EFO:0005719,Karpas-422,cell_line,adult,encode,paired,False,0.7704964280128479,
+EFO:0005720 DNase-seq,.,DNase-seq,EFO:0005720,SK-MEL-5,cell_line,adult,encode,paired,False,0.6427146196365356,
+EFO:0005721 DNase-seq,.,DNase-seq,EFO:0005721,SK-N-DZ,cell_line,child,encode,paired,False,0.2404664009809494,
+EFO:0005722 DNase-seq,.,DNase-seq,EFO:0005722,SJCRH30,cell_line,child,encode,paired,False,0.2745540738105774,
+EFO:0005723 DNase-seq,.,DNase-seq,EFO:0005723,GM23248,cell_line,adult,encode,paired,False,0.6127015352249146,
+EFO:0005724 DNase-seq,.,DNase-seq,EFO:0005724,MM.1S,cell_line,adult,encode,paired,False,1.686448097229004,
+EFO:0005725 DNase-seq,.,DNase-seq,EFO:0005725,BE2C,cell_line,child,encode,paired,False,0.5945417881011963,
+EFO:0005726 DNase-seq,.,DNase-seq,EFO:0005726,LNCaP clone FGC,cell_line,adult,encode,single,False,2.3022053241729736,
+EFO:0005901 DNase-seq,.,DNase-seq,EFO:0005901,ELF-1,cell_line,embryonic,encode,paired,False,0.70262211561203,
+EFO:0005903 DNase-seq,.,DNase-seq,EFO:0005903,KBM-7,cell_line,adult,encode,paired,False,0.6494789123535156,
+EFO:0005904 DNase-seq,.,DNase-seq,EFO:0005904,H7,cell_line,embryonic,encode,single,False,0.720466136932373,
+EFO:0005913 DNase-seq,.,DNase-seq,EFO:0005913,urothelium cell line,cell_line,child,encode,single,False,0.7121906280517578,
+EFO:0006270 DNase-seq,.,DNase-seq,EFO:0006270,AG04450,cell_line,embryonic,encode,single,False,2.4997332096099854,
+EFO:0006639 DNase-seq,.,DNase-seq,EFO:0006639,LoVo,cell_line,adult,encode,paired,False,0.41923755407333374,
+EFO:0006711 DNase-seq,.,DNase-seq,EFO:0006711,OCI-LY7,cell_line,adult,encode,paired,False,0.3808844983577728,
+EFO:0007074 DNase-seq,.,DNase-seq,EFO:0007074,DND-41,cell_line,child,encode,paired,False,0.6119149923324585,
+EFO:0007098 DNase-seq,.,DNase-seq,EFO:0007098,iPS DF 6.9,cell_line,newborn,encode,single,False,4.789461135864258,
+EFO:0007598 DNase-seq,.,DNase-seq,EFO:0007598,HAP-1,cell_line,adult,encode,paired,False,0.2808516025543213,
+EFO:0007599 DNase-seq,.,DNase-seq,EFO:0007599,L1-S8,cell_line,unknown,encode,paired,False,0.49668434262275696,
+EFO:0007600 DNase-seq,.,DNase-seq,EFO:0007600,L1-S8R,cell_line,unknown,encode,paired,False,0.21592050790786743,
+EFO:0007610 DNase-seq,.,DNase-seq,EFO:0007610,RWPE2,cell_line,unknown,encode,paired,False,0.47734326124191284,
+EFO:0007748 DNase-seq,.,DNase-seq,EFO:0007748,EH,cell_line,newborn,encode,paired,False,0.6068446040153503,
+EFO:0007749 DNase-seq,.,DNase-seq,EFO:0007749,EL,cell_line,newborn,encode,paired,False,0.6062823534011841,
+EFO:0007750 DNase-seq,.,DNase-seq,EFO:0007750,ELR,cell_line,newborn,encode,paired,False,0.6943896412849426,
+EFO:0007950 DNase-seq,.,DNase-seq,EFO:0007950,GM23338,cell_line,adult,encode,paired,False,0.40125343203544617,
+EFO:0007952 DNase-seq,.,DNase-seq,EFO:0007952,iPS-NIHi11,cell_line,adult,encode,single,False,0.6423331499099731,
+EFO:0009318 DNase-seq,.,DNase-seq,EFO:0009318,HFFc6,cell_line,newborn,encode,paired,False,0.5453643202781677,
+EFO:0009500 DNase-seq,.,DNase-seq,EFO:0009500,HCEC 1CT,cell_line,unknown,encode,paired,False,0.6607038378715515,
+EFO:0009747 DNase-seq,.,DNase-seq,EFO:0009747,WTC11,cell_line,adult,encode,paired,False,0.541504979133606,
+NTR:0000474 DNase-seq,.,DNase-seq,NTR:0000474,ecto neural progenitor cell,in_vitro_differentiated_cells,embryonic,encode,paired,False,0.5599417090415955,
+NTR:0000491 DNase-seq,.,DNase-seq,NTR:0000491,Right ventricle myocardium inferior,tissue,adult,encode,paired,False,3.2410683631896973,HEART
+NTR:0000492 DNase-seq,.,DNase-seq,NTR:0000492,Right ventricle myocardium superior,tissue,adult,encode,paired,False,1.5690189599990845,HEART
+NTR:0000493 DNase-seq,.,DNase-seq,NTR:0000493,left ventricle myocardium inferior,tissue,adult,encode,paired,False,1.6126317977905273,HEART
+NTR:0000494 DNase-seq,.,DNase-seq,NTR:0000494,left ventricle myocardium superior,tissue,adult,encode,paired,False,1.6449697017669678,HEART
+NTR:0000512 DNase-seq,.,DNase-seq,NTR:0000512,nephron progenitor cell,in_vitro_differentiated_cells,embryonic,encode,paired,False,0.7815791368484497,
+NTR:0000521 DNase-seq,.,DNase-seq,NTR:0000521,fibroblast of skin of left biceps,primary_cell,embryonic,encode,single,False,2.447565793991089,
+NTR:0000522 DNase-seq,.,DNase-seq,NTR:0000522,fibroblast of skin of left quadriceps,primary_cell,embryonic,encode,single,False,1.9251389503479004,
+NTR:0000523 DNase-seq,.,DNase-seq,NTR:0000523,fibroblast of skin of right quadriceps,primary_cell,embryonic,encode,paired,False,0.6511805057525635,
+NTR:0000524 DNase-seq,.,DNase-seq,NTR:0000524,fibroblast of skin of scalp,primary_cell,embryonic,encode,paired,False,0.9233055114746094,
+NTR:0000525 DNase-seq,.,DNase-seq,NTR:0000525,fibroblast of skin of right biceps,primary_cell,embryonic,encode,paired,False,0.7713181376457214,
+NTR:0000856 DNase-seq,.,DNase-seq,NTR:0000856,mesendoderm,in_vitro_differentiated_cells,embryonic,encode,single,False,0.5820455551147461,
+NTR:0001484 DNase-seq,.,DNase-seq,NTR:0001484,islet precursor cell,in_vitro_differentiated_cells,embryonic,encode,paired,False,0.6271908283233643,
+UBERON:0000056 DNase-seq,.,DNase-seq,UBERON:0000056,ureter,tissue,adult,encode,paired,False,0.7453031539916992,
+UBERON:0000059 DNase-seq,.,DNase-seq,UBERON:0000059,large intestine,tissue,embryonic,encode,single,False,0.3893989026546478,INTESTINE
+UBERON:0000317 DNase-seq,.,DNase-seq,UBERON:0000317,colonic mucosa,tissue,child,encode,paired,False,0.6837869882583618,INTESTINE
+UBERON:0000473 DNase-seq,.,DNase-seq,UBERON:0000473,testis,tissue,adult,encode,paired,False,0.9270487427711487,
+UBERON:0000945 DNase-seq,.,DNase-seq,UBERON:0000945,stomach,tissue,adult,encode,paired,False,0.9069320559501648,
+UBERON:0000947 DNase-seq,.,DNase-seq,UBERON:0000947,aorta,tissue,adult,encode,paired,False,0.6485071778297424,ARTERY
+UBERON:0000948 DNase-seq,.,DNase-seq,UBERON:0000948,heart,tissue,embryonic,encode,paired,False,0.7380961179733276,HEART
+UBERON:0000955 DNase-seq,.,DNase-seq,UBERON:0000955,brain,tissue,embryonic,encode,paired,False,0.3288920521736145,BRAIN
+UBERON:0000966 DNase-seq,.,DNase-seq,UBERON:0000966,retina,tissue,embryonic,encode,paired,False,0.5274835228919983,
+UBERON:0000970 DNase-seq,.,DNase-seq,UBERON:0000970,eye,tissue,embryonic,encode,paired,False,0.26817503571510315,
+UBERON:0000981 DNase-seq,.,DNase-seq,UBERON:0000981,femur,tissue,embryonic,encode,paired,False,0.9800584316253662,
+UBERON:0000988 DNase-seq,.,DNase-seq,UBERON:0000988,pons,tissue,adult,encode,paired,False,0.4579213261604309,
+UBERON:0000992 DNase-seq,.,DNase-seq,UBERON:0000992,ovary,tissue,adult,encode,paired,False,0.2674427926540375,
+UBERON:0000995 DNase-seq,.,DNase-seq,UBERON:0000995,uterus,tissue,adult,encode,paired,False,0.5486983060836792,
+UBERON:0001072 DNase-seq,.,DNase-seq,UBERON:0001072,posterior vena cava,tissue,adult,encode,paired,False,1.1472437381744385,
+UBERON:0001114 DNase-seq,.,DNase-seq,UBERON:0001114,right lobe of liver,tissue,adult,encode,paired,False,0.47963228821754456,LIVER
+UBERON:0001115 DNase-seq,.,DNase-seq,UBERON:0001115,left lobe of liver,tissue,adult,encode,paired,False,0.6450967192649841,
+UBERON:0001150 DNase-seq,.,DNase-seq,UBERON:0001150,body of pancreas,tissue,adult,encode,paired,False,0.357327401638031,
+UBERON:0001157 DNase-seq,.,DNase-seq,UBERON:0001157,transverse colon,tissue,adult,encode,paired,False,1.0917359590530396,INTESTINE
+UBERON:0001159 DNase-seq,.,DNase-seq,UBERON:0001159,sigmoid colon,tissue,adult,encode,paired,False,0.9145393967628479,INTESTINE
+UBERON:0001211 DNase-seq,.,DNase-seq,UBERON:0001211,Peyer's patch,tissue,adult,encode,paired,False,0.3851829171180725,
+UBERON:0001224 DNase-seq,.,DNase-seq,UBERON:0001224,renal pelvis,tissue,embryonic,encode,single,False,2.1799817085266113,
+UBERON:0001264 DNase-seq,.,DNase-seq,UBERON:0001264,pancreas,tissue,adult,encode,paired,False,0.29151973128318787,
+UBERON:0001322 DNase-seq,.,DNase-seq,UBERON:0001322,sciatic nerve,tissue,adult,encode,paired,False,0.7888127565383911,
+UBERON:0001323 DNase-seq,.,DNase-seq,UBERON:0001323,tibial nerve,tissue,adult,encode,paired,False,0.6753217577934265,
+UBERON:0001383 DNase-seq,.,DNase-seq,UBERON:0001383,muscle of leg,tissue,embryonic,encode,single,False,0.5681041479110718,MUSCLE
+UBERON:0001496 DNase-seq,.,DNase-seq,UBERON:0001496,ascending aorta,tissue,adult,encode,paired,False,0.7453764081001282,ARTERY
+UBERON:0001499 DNase-seq,.,DNase-seq,UBERON:0001499,muscle of arm,tissue,embryonic,encode,single,False,1.5984889268875122,
+UBERON:0001515 DNase-seq,.,DNase-seq,UBERON:0001515,thoracic aorta,tissue,adult,encode,paired,False,2.0039520263671875,ARTERY
+UBERON:0001621 DNase-seq,.,DNase-seq,UBERON:0001621,coronary artery,tissue,adult,encode,paired,False,0.9081931710243225,ARTERY
+UBERON:0001723 DNase-seq,.,DNase-seq,UBERON:0001723,tongue,tissue,embryonic,encode,paired,False,0.461385577917099,
+UBERON:0001774 DNase-seq,.,DNase-seq,UBERON:0001774,muscle of trunk,tissue,embryonic,encode,single,False,0.4869764447212219,MUSCLE
+UBERON:0001870 DNase-seq,.,DNase-seq,UBERON:0001870,frontal cortex,tissue,adult,encode,single,False,0.9675334692001343,BRAIN
+UBERON:0001874 DNase-seq,.,DNase-seq,UBERON:0001874,putamen,tissue,adult,encode,paired,False,1.0092743635177612,BRAIN
+UBERON:0001875 DNase-seq,.,DNase-seq,UBERON:0001875,globus pallidus,tissue,adult,encode,paired,False,0.6928175687789917,
+UBERON:0001954 DNase-seq,.,DNase-seq,UBERON:0001954,Ammon's horn,tissue,adult,encode,paired,False,0.5017354488372803,
+UBERON:0001987 DNase-seq,.,DNase-seq,UBERON:0001987,placenta,tissue,embryonic,encode,paired,False,0.14548371732234955,
+UBERON:0002037 DNase-seq,.,DNase-seq,UBERON:0002037,cerebellum,tissue,adult,encode,single,False,0.498566210269928,BRAIN
+UBERON:0002046 DNase-seq,.,DNase-seq,UBERON:0002046,thyroid gland,tissue,adult,encode,paired,False,0.7914156913757324,
+UBERON:0002048 DNase-seq,.,DNase-seq,UBERON:0002048,lung,tissue,embryonic,encode,paired,False,0.4275049567222595,LUNG
+UBERON:0002078 DNase-seq,.,DNase-seq,UBERON:0002078,right cardiac atrium,tissue,adult,encode,paired,False,0.8271661996841431,HEART
+UBERON:0002079 DNase-seq,.,DNase-seq,UBERON:0002079,left cardiac atrium,tissue,adult,encode,paired,False,1.5311051607131958,HEART
+UBERON:0002080 DNase-seq,.,DNase-seq,UBERON:0002080,heart right ventricle,tissue,adult,encode,paired,False,0.6760692000389099,HEART
+UBERON:0002084 DNase-seq,.,DNase-seq,UBERON:0002084,heart left ventricle,tissue,adult,encode,paired,False,0.3393922448158264,HEART
+UBERON:0002099 DNase-seq,.,DNase-seq,UBERON:0002099,cardiac septum,tissue,adult,encode,paired,False,1.495876431465149,HEART
+UBERON:0002106 DNase-seq,.,DNase-seq,UBERON:0002106,spleen,tissue,adult,encode,paired,False,0.8771628141403198,IMMUNE
+UBERON:0002107 DNase-seq,.,DNase-seq,UBERON:0002107,liver,tissue,embryonic,encode,paired,False,0.7895574569702148,LIVER
+UBERON:0002108 DNase-seq,.,DNase-seq,UBERON:0002108,small intestine,tissue,adult,encode,paired,False,0.5932072997093201,INTESTINE
+UBERON:0002113 DNase-seq,.,DNase-seq,UBERON:0002113,kidney,tissue,adult,encode,paired,False,1.0922431945800781,
+UBERON:0002129 DNase-seq,.,DNase-seq,UBERON:0002129,cerebellar cortex,tissue,adult,encode,paired,False,0.38671547174453735,BRAIN
+UBERON:0002167 DNase-seq,.,DNase-seq,UBERON:0002167,right lung,tissue,embryonic,encode,single,False,1.2309776544570923,
+UBERON:0002168 DNase-seq,.,DNase-seq,UBERON:0002168,left lung,tissue,adult,encode,paired,False,0.9140506386756897,
+UBERON:0002170 DNase-seq,.,DNase-seq,UBERON:0002170,upper lobe of right lung,tissue,adult,encode,paired,False,0.863777756690979,
+UBERON:0002171 DNase-seq,.,DNase-seq,UBERON:0002171,lower lobe of right lung,tissue,adult,encode,paired,False,1.0217218399047852,
+UBERON:0002240 DNase-seq,.,DNase-seq,UBERON:0002240,spinal cord,tissue,embryonic,encode,paired,False,0.29311633110046387,BRAIN
+UBERON:0002324 DNase-seq,.,DNase-seq,UBERON:0002324,muscle of back,tissue,embryonic,encode,single,False,0.36552220582962036,
+UBERON:0002331 DNase-seq,.,DNase-seq,UBERON:0002331,umbilical cord,tissue,embryonic,encode,paired,False,0.4278322160243988,
+UBERON:0002367 DNase-seq,.,DNase-seq,UBERON:0002367,prostate gland,tissue,adult,encode,paired,False,0.7419143915176392,
+UBERON:0002369 DNase-seq,.,DNase-seq,UBERON:0002369,adrenal gland,tissue,adult,encode,paired,False,0.24145561456680298,
+UBERON:0002370 DNase-seq,.,DNase-seq,UBERON:0002370,thymus,tissue,embryonic,encode,single,False,0.23071163892745972,IMMUNE
+UBERON:0002626 DNase-seq,.,DNase-seq,UBERON:0002626,head of caudate nucleus,tissue,adult,encode,paired,False,0.10091119259595871,BRAIN
+UBERON:0002740 DNase-seq,.,DNase-seq,UBERON:0002740,posterior cingulate gyrus,tissue,adult,encode,paired,False,0.3267453908920288,
+UBERON:0003124 DNase-seq,.,DNase-seq,UBERON:0003124,chorion,tissue,unknown,encode,single,False,2.098452568054199,
+UBERON:0003662 DNase-seq,.,DNase-seq,UBERON:0003662,forelimb muscle,tissue,embryonic,encode,single,False,5.48020601272583,
+UBERON:0003663 DNase-seq,.,DNase-seq,UBERON:0003663,hindlimb muscle,tissue,embryonic,encode,single,False,2.133021354675293,
+UBERON:0004264 DNase-seq,.,DNase-seq,UBERON:0004264,lower leg skin,tissue,adult,encode,paired,False,0.4412038326263428,
+UBERON:0004538 DNase-seq,.,DNase-seq,UBERON:0004538,left kidney,tissue,embryonic,encode,single,False,2.1672964096069336,
+UBERON:0004539 DNase-seq,.,DNase-seq,UBERON:0004539,right kidney,tissue,embryonic,encode,paired,False,1.0729928016662598,
+UBERON:0004992 DNase-seq,.,DNase-seq,UBERON:0004992,mucosa of descending colon,tissue,adult,encode,paired,False,0.44594788551330566,INTESTINE
+UBERON:0005033 DNase-seq,.,DNase-seq,UBERON:0005033,mucosa of gallbladder,tissue,child,encode,paired,False,0.7470425963401794,
+UBERON:0005270 DNase-seq,.,DNase-seq,UBERON:0005270,renal cortex interstitium,tissue,embryonic,encode,single,False,0.4723626971244812,BRAIN
+UBERON:0006631 DNase-seq,.,DNase-seq,UBERON:0006631,right atrium auricular region,tissue,adult,encode,paired,False,0.8495630025863647,HEART
+UBERON:0007610 DNase-seq,.,DNase-seq,UBERON:0007610,tibial artery,tissue,adult,encode,paired,False,0.6081244349479675,ARTERY
+UBERON:0008367 DNase-seq,.,DNase-seq,UBERON:0008367,breast epithelium,tissue,adult,encode,paired,False,0.618876576423645,
+UBERON:0008450 DNase-seq,.,DNase-seq,UBERON:0008450,psoas muscle,tissue,adult,encode,paired,False,0.9886283278465271,
+UBERON:0008952 DNase-seq,.,DNase-seq,UBERON:0008952,upper lobe of left lung,tissue,adult,encode,paired,False,0.691214382648468,LUNG
+UBERON:0008953 DNase-seq,.,DNase-seq,UBERON:0008953,lower lobe of left lung,tissue,adult,encode,paired,False,0.6039119958877563,
+UBERON:0008971 DNase-seq,.,DNase-seq,UBERON:0008971,left colon,tissue,adult,encode,paired,False,0.6561613082885742,INTESTINE
+UBERON:0009834 DNase-seq,.,DNase-seq,UBERON:0009834,dorsolateral prefrontal cortex,tissue,adult,encode,paired,False,0.20427392423152924,BRAIN
+UBERON:0010414 DNase-seq,.,DNase-seq,UBERON:0010414,omental fat pad,tissue,adult,encode,paired,False,1.842028260231018,ADIPOSE
+UBERON:0011907 DNase-seq,.,DNase-seq,UBERON:0011907,gastrocnemius medialis,tissue,adult,encode,paired,False,0.8089129328727722,
+UBERON:0015143 DNase-seq,.,DNase-seq,UBERON:0015143,mesenteric fat pad,tissue,adult,encode,paired,False,0.8094824552536011,
+UBERON:0018115 DNase-seq,.,DNase-seq,UBERON:0018115,left renal pelvis,tissue,embryonic,encode,single,False,1.1233245134353638,
+UBERON:0018116 DNase-seq,.,DNase-seq,UBERON:0018116,right renal pelvis,tissue,embryonic,encode,single,False,1.0260438919067383,
+UBERON:0018117 DNase-seq,.,DNase-seq,UBERON:0018117,left renal cortex interstitium,tissue,embryonic,encode,single,False,0.9994888305664062,BRAIN
+UBERON:0018118 DNase-seq,.,DNase-seq,UBERON:0018118,right renal cortex interstitium,tissue,embryonic,encode,single,False,1.2882170677185059,BRAIN
+UBERON:0036149 DNase-seq,.,DNase-seq,UBERON:0036149,suprapubic skin,tissue,adult,encode,paired,False,0.48592454195022583,
+UBERON:8300001 DNase-seq,.,DNase-seq,UBERON:8300001,right forelimb,tissue,embryonic,encode,paired,False,1.431964635848999,
+UBERON:8300002 DNase-seq,.,DNase-seq,UBERON:8300002,left forelimb,tissue,embryonic,encode,paired,False,1.2063522338867188,
+UBERON:8300003 DNase-seq,.,DNase-seq,UBERON:8300003,right hindlimb,tissue,embryonic,encode,paired,False,1.2547117471694946,
+UBERON:8300004 DNase-seq,.,DNase-seq,UBERON:8300004,left hindlimb,tissue,embryonic,encode,paired,False,1.946841835975647,

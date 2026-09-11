@@ -1,0 +1,13 @@
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+.DS_Store
+*.orig
+main.orig.pdf
+__pycache__/
+.venv/

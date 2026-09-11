@@ -1,0 +1,12 @@
+trait,ldsc,ag_top,ag_rank_primary,ag_rank_alt,agree,q
+Type 2 diabetes,pancreas,Islet,1,,yes,0.1105226461538461
+Type 2 diabetes (replication),pancreas,Immune,8,,no,0.2247650266666666
+Body mass index,adipose AND cortex,Fat,3,1.0,yes,0.8639003684210526
+Cognitive ability / education,"brain (cerebellar, neuronal)",Immune,2,,no,0.8639003684210526
+Free cholesterol in large LDL,liver,Liver,1,,yes,0.0060033275
+HDL cholesterol,liver,Fat,3,,no,0.0004905007
+Triglycerides,liver,Fat,6,,no,0.0348136733333333
+Crohn's disease (medication proxy),immune (multiple cell types),Immune,1,,yes,0.0060229866666666
+Ulcerative colitis (PheCode),immune (multiple cell types),Immune,1,,yes,0.98854536
+Asthma,T and NKT cells,Artery,5,,no,0.0003596435333333
+Systolic blood pressure,stromal / musculoskeletal,Muscle,3,1.0,yes,0.4259174375

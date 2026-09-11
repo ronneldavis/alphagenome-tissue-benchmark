@@ -1,0 +1,266 @@
+{
+ "GCST009379": {
+  "hasSumstats": false,
+  "nSamples": 898130,
+  "nCases": 74124,
+  "traitFromSource": "Type 2 diabetes",
+  "nCredibleSets": 182,
+  "methods": {
+   "PICS": 182
+  },
+  "confidence": {
+   "PICS fine-mapped credible set based on reported top hit": 182
+  }
+ },
+ "GCST90501150": {
+  "hasSumstats": true,
+  "nSamples": 450015,
+  "nCases": 0,
+  "traitFromSource": "Free cholesterol in large LDL",
+  "nCredibleSets": 122,
+  "methods": {
+   "PICS": 122
+  },
+  "confidence": {
+   "PICS fine-mapped credible set extracted from summary statistics": 122
+  }
+ },
+ "GCST90501112": {
+  "hasSumstats": true,
+  "nSamples": 450015,
+  "nCases": 0,
+  "traitFromSource": "HDL cholesterol levels",
+  "nCredibleSets": 421,
+  "methods": {
+   "PICS": 421
+  },
+  "confidence": {
+   "PICS fine-mapped credible set extracted from summary statistics": 421
+  }
+ },
+ "GCST006613": {
+  "hasSumstats": false,
+  "nSamples": 297626,
+  "nCases": 0,
+  "traitFromSource": "Triglycerides",
+  "nCredibleSets": 124,
+  "methods": {
+   "PICS": 124
+  },
+  "confidence": {
+   "PICS fine-mapped credible set based on reported top hit": 124
+  }
+ },
+ "GCST90474304": {
+  "hasSumstats": true,
+  "nSamples": 431897,
+  "nCases": 0,
+  "traitFromSource": "Alanine aminotransferase levels (UKB data field 30620)",
+  "nCredibleSets": 302,
+  "methods": {
+   "PICS": 302
+  },
+  "confidence": {
+   "PICS fine-mapped credible set extracted from summary statistics": 302
+  }
+ },
+ "GCST90018942": {
+  "hasSumstats": true,
+  "nSamples": 463178,
+  "nCases": 0,
+  "traitFromSource": "Serum alkaline phosphatase levels",
+  "nCredibleSets": 380,
+  "methods": {
+   "PICS": 380
+  },
+  "confidence": {
+   "PICS fine-mapped credible set extracted from summary statistics": 380
+  }
+ },
+ "FINNGEN_R12_RX_CROHN_1STLINE": {
+  "hasSumstats": true,
+  "nSamples": 500348,
+  "nCases": 106320,
+  "traitFromSource": "First line medication for Crohn's disease",
+  "nCredibleSets": 52,
+  "methods": {
+   "SuSie": 52
+  },
+  "confidence": {
+   "SuSiE fine-mapped credible set with in-sample LD": 52
+  }
+ },
+ "GCST90480318": {
+  "hasSumstats": true,
+  "nSamples": 629991,
+  "nCases": 2312,
+  "traitFromSource": "Ulcerative colitis (chronic) (PheCode 555.21)",
+  "nCredibleSets": 149,
+  "methods": {
+   "PICS": 149
+  },
+  "confidence": {
+   "PICS fine-mapped credible set extracted from summary statistics": 149
+  }
+ },
+ "GCST90479877": {
+  "hasSumstats": true,
+  "nSamples": 627819,
+  "nCases": 3569,
+  "traitFromSource": "Type 1 diabetes with ophthalmic manifestations (PheCode 250.13)",
+  "nCredibleSets": 72,
+  "methods": {
+   "PICS": 72
+  },
+  "confidence": {
+   "PICS fine-mapped credible set extracted from summary statistics": 72
+  }
+ },
+ "GCST010043": {
+  "hasSumstats": false,
+  "nSamples": 536345,
+  "nCases": 88486,
+  "traitFromSource": "Asthma",
+  "nCredibleSets": 132,
+  "methods": {
+   "PICS": 132
+  },
+  "confidence": {
+   "PICS fine-mapped credible set based on reported top hit": 132
+  }
+ },
+ "GCST90662907": {
+  "hasSumstats": false,
+  "nSamples": 928679,
+  "nCases": 0,
+  "traitFromSource": "Platelet count",
+  "nCredibleSets": 652,
+  "methods": {
+   "PICS": 500
+  },
+  "confidence": {
+   "PICS fine-mapped credible set based on reported top hit": 500
+  }
+ },
+ "GCST90624411": {
+  "hasSumstats": true,
+  "nSamples": 2584013,
+  "nCases": 275950,
+  "traitFromSource": "Atrial fibrillation",
+  "nCredibleSets": 587,
+  "methods": {
+   "PICS": 500
+  },
+  "confidence": {
+   "PICS fine-mapped credible set extracted from summary statistics": 500
+  }
+ },
+ "GCST90480666": {
+  "hasSumstats": true,
+  "nSamples": 609495,
+  "nCases": 0,
+  "traitFromSource": "heart rate (HR, mean, inv-normal transformed)",
+  "nCredibleSets": 336,
+  "methods": {
+   "PICS": 336
+  },
+  "confidence": {
+   "PICS fine-mapped credible set extracted from summary statistics": 336
+  }
+ },
+ "GCST90132314": {
+  "hasSumstats": true,
+  "nSamples": 1165690,
+  "nCases": 0,
+  "traitFromSource": "Coronary artery disease",
+  "nCredibleSets": 250,
+  "methods": {
+   "SuSiE-inf": 245,
+   "PICS": 5
+  },
+  "confidence": {
+   "SuSiE fine-mapped credible set with out-of-sample LD": 245,
+   "PICS fine-mapped credible set extracted from summary statistics": 5
+  }
+ },
+ "GCST90000066": {
+  "hasSumstats": true,
+  "nSamples": 870217,
+  "nCases": 0,
+  "traitFromSource": "Systolic blood pressure",
+  "nCredibleSets": 273,
+  "methods": {
+   "PICS": 273
+  },
+  "confidence": {
+   "PICS fine-mapped credible set extracted from summary statistics": 273
+  }
+ },
+ "GCST007039": {
+  "hasSumstats": false,
+  "nSamples": 458000,
+  "nCases": 0,
+  "traitFromSource": "Body mass index",
+  "nCredibleSets": 649,
+  "methods": {
+   "PICS": 500
+  },
+  "confidence": {
+   "PICS fine-mapped credible set based on reported top hit": 500
+  }
+ },
+ "GCST008595": {
+  "hasSumstats": false,
+  "nSamples": 556676,
+  "nCases": 77096,
+  "traitFromSource": "Cognitive ability, years of educational attainment or schizophrenia (pleiotropy)",
+  "nCredibleSets": 178,
+  "methods": {
+   "PICS": 178
+  },
+  "confidence": {
+   "PICS fine-mapped credible set based on reported top hit": 178
+  }
+ },
+ "GCST90244094": {
+  "hasSumstats": false,
+  "nSamples": 588452,
+  "nCases": 0,
+  "traitFromSource": "Lung function (FEV1/FVC)",
+  "nCredibleSets": 318,
+  "methods": {
+   "PICS": 318
+  },
+  "confidence": {
+   "PICS fine-mapped credible set based on reported top hit": 318
+  }
+ },
+ "GCST90503108": {
+  "hasSumstats": true,
+  "nSamples": 658426,
+  "nCases": 56146,
+  "traitFromSource": "Atopic dermatitis",
+  "nCredibleSets": 90,
+  "methods": {
+   "PICS": 90
+  },
+  "confidence": {
+   "PICS fine-mapped credible set extracted from summary statistics": 90
+  }
+ },
+ "GCST006867": {
+  "hasSumstats": true,
+  "nSamples": 659316,
+  "nCases": 62892,
+  "traitFromSource": "Type 2 diabetes",
+  "nCredibleSets": 121,
+  "methods": {
+   "PICS": 9,
+   "SuSiE-inf": 112
+  },
+  "confidence": {
+   "PICS fine-mapped credible set extracted from summary statistics": 9,
+   "SuSiE fine-mapped credible set with out-of-sample LD": 112
+  }
+ }
+}

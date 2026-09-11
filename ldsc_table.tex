@@ -1,0 +1,24 @@
+\begin{table}[htbp]\centering\small
+\caption{Matched head-to-head. Both methods were run on the same \NMATCH{} traits, the same GWAS datasets and the same \NTISSUE{} tissue definitions. \textbf{Rank} is the position of the pre-specified expected tissue. Bold marks a rank-1 recovery.}\label{tab:ldsc}
+\begin{tabular}{llrlrl}\toprule
+Trait & Expected & \multicolumn{2}{c}{AlphaGenome} & \multicolumn{2}{c}{LDSC-SEG} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}
+ & & Rank & Top & Rank & Top \\ \midrule
+Free cholesterol in large LDL & Liver & \textbf{1} & Liver & \textbf{1} & Liver \\
+Alanine aminotransferase & Liver & \textbf{1} & Liver & \textbf{1} & Liver \\
+Alkaline phosphatase & Liver & \textbf{1} & Liver & \textbf{1} & Liver \\
+Atrial fibrillation & Heart & \textbf{1} & Heart & \textbf{1} & Heart \\
+Heart rate & Heart & \textbf{1} & Heart & \textbf{1} & Heart \\
+Asthma & Immune & 5 & Artery & \textbf{1} & Immune \\
+Type 2 diabetes (replication) & Islet & 8 & Immune & \textbf{1} & Islet \\
+HDL cholesterol & Liver & 3 & Fat & 2 & Fat \\
+Systolic blood pressure & Artery & 3 & Muscle & 2 & Fat \\
+Type 1 diabetes, ophthalmic (PheCode 250.13) & Immune & 7 & Skin & 2 & Intestine \\
+Coronary artery disease & Artery & \textbf{1} & Artery & 3 & Lung \\
+Lung function (FEV1/FVC) & Lung & 5 & Heart & 3 & Artery \\
+Atopic dermatitis & Skin & 2 & Immune & 7 & Immune \\
+Ulcerative colitis (PheCode 555.21) & Immune & \textbf{1} & Immune & 9 & Artery \\
+\midrule
+\multicolumn{2}{l}{\emph{rank-1 recovery}} & \multicolumn{2}{c}{7/14} & \multicolumn{2}{c}{7/14} \\
+\multicolumn{2}{l}{\emph{top-3 recovery}} & \multicolumn{2}{c}{10/14} & \multicolumn{2}{c}{12/14} \\
+\bottomrule\end{tabular}\end{table}
