@@ -1,0 +1,22 @@
+[
+ {"trait": "Type 2 diabetes", "label": "Type 2 diabetes", "study": "GCST009379", "expected": "ISLET", "source": "Mahajan 2018", "file": "T_GCST009379"},
+ {"trait": "Free cholesterol in large LDL", "label": "Free cholesterol in large LDL", "study": "GCST90501150", "expected": "LIVER", "source": "Zoodsma 2025", "file": "T_GCST90501150"},
+ {"trait": "HDL cholesterol", "label": "HDL cholesterol", "study": "GCST90501112", "expected": "LIVER", "source": "Zoodsma 2025", "file": "T_GCST90501112"},
+ {"trait": "Triglycerides", "label": "Triglycerides", "study": "GCST006613", "expected": "LIVER", "source": "Klarin 2018", "file": "T_GCST006613"},
+ {"trait": "Alanine aminotransferase", "label": "Alanine aminotransferase", "study": "GCST90474304", "expected": "LIVER", "source": "UKB-WGS 2025", "file": "T_GCST90474304"},
+ {"trait": "Alkaline phosphatase", "label": "Alkaline phosphatase", "study": "GCST90018942", "expected": "LIVER", "source": "Sakaue 2021", "file": "T_GCST90018942"},
+ {"trait": "Crohn's disease (medication proxy)", "label": "Crohn's disease medication (FinnGen proxy)", "study": "FINNGEN_R12_RX_CROHN_1STLINE", "expected": "IMMUNE", "source": "FinnGen R12", "file": "T_FINNGEN_R12_RX_CROHN_1STLINE"},
+ {"trait": "Ulcerative colitis", "label": "Ulcerative colitis", "study": "GCST90446794", "expected": "IMMUNE", "source": "Liu 2023", "file": "T_GCST90446794"},
+ {"trait": "Type 1 diabetes", "label": "Type 1 diabetes", "study": "GCST90013445", "expected": "IMMUNE", "source": "Robertson 2021", "file": "T_GCST90013445"},
+ {"trait": "Asthma", "label": "Asthma", "study": "GCST010043", "expected": "IMMUNE", "source": "Han 2020", "file": "T_GCST010043"},
+ {"trait": "Platelet count", "label": "Platelet count", "study": "GCST90662907", "expected": "IMMUNE", "source": "Jee 2025", "file": "T_GCST90662907"},
+ {"trait": "Atrial fibrillation", "label": "Atrial fibrillation", "study": "GCST90624411", "expected": "HEART", "source": "Yuan 2025", "file": "T_GCST90624411"},
+ {"trait": "Heart rate", "label": "Heart rate", "study": "GCST90480666", "expected": "HEART", "source": "Verma 2024", "file": "T_GCST90480666"},
+ {"trait": "Coronary artery disease", "label": "Coronary artery disease", "study": "GCST90132314", "expected": "ARTERY", "source": "Aragam 2022", "file": "T_GCST90132314"},
+ {"trait": "Systolic blood pressure", "label": "Systolic blood pressure", "study": "GCST90000066", "expected": "ARTERY", "source": "Surendran 2020", "file": "T_GCST90000066"},
+ {"trait": "Body mass index", "label": "Body mass index", "study": "GCST90474606", "expected": "BRAIN", "source": "UKB-WGS 2025", "file": "T_GCST90474606"},
+ {"trait": "Intelligence", "label": "Intelligence", "study": "GCST006250", "expected": "BRAIN", "source": "Savage 2018", "file": "T_GCST006250"},
+ {"trait": "Lung function (FEV1/FVC)", "label": "Lung function (FEV1/FVC)", "study": "GCST90244094", "expected": "LUNG", "source": "Shrine 2023", "file": "T_GCST90244094"},
+ {"trait": "Atopic dermatitis", "label": "Atopic dermatitis", "study": "GCST90503108", "expected": "SKIN", "source": "Oliva 2025", "file": "T_GCST90503108"},
+ {"trait": "Type 2 diabetes (replication)", "label": "Type 2 diabetes (replication)", "study": "GCST006867", "expected": "ISLET", "source": "Xue 2018", "file": "t2d"}
+]

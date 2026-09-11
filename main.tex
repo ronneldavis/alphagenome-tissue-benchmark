@@ -28,49 +28,32 @@ limited by effect detectability more than by assay coverage}
 
 \begin{abstract}
 \noindent
-Sequence-to-function models predict tissue-resolved regulatory activity directly from
-DNA, and so can be asked, for any individual non-coding risk variant, in which tissue it
-acts. We tested how reliably this works by asking whether AlphaGenome recovers
-trait--tissue relationships that are already established by orthogonal evidence. Using
-fine-mapped credible sets from \NTRAITS{} GWAS of \NUNIQUE{} complex traits and a shared
-background of \NBG{} variants placed near GWAS loci, we scored every variant across
-\NTISSUE{} tissue groups. The pre-specified expected tissue ranked first for \NHITONE{} of
-\NTRAITS{} trait--GWAS pairs ($P = \PHITONE$ against a chance rate of $1/\NTISSUE$), fell
-within the top three for \NHITTHREE{}, and was significantly enriched over background for
-\NSIG{} (Benjamini--Hochberg $q < 0.05$). Recovery was therefore substantially better than
-chance but far from universal, which let us ask what separates the traits that work from
-those that do not. We found no evidence that it is how well the expected tissue is
-measured: across traits, the number of tracks available for the expected tissue was
-uncorrelated with that tissue's enrichment ($\rho = \RHOTRACK$, $P = \PTRACK$) or rank
-($\rho = \RHOTRACKRANK$, $P = \PTRACKRANK$), although with \NTRAITS{} trait--GWAS pairs
-and eight distinct expected tissues this test can exclude only a strong coverage effect.
-Brain has \BRAINHIST{} histone and \BRAINACC{} accessibility tracks, yet both
-brain-expected traits fail; the pancreatic islet has \ISLETHIST{} and \ISLETACC{}, yet
-type 2 diabetes ranks the islet first in one GWAS (non-significantly, $z = \TDZ$,
-$P = \TDP$) and \TDXRANK{}th in another. What did track significant enrichment was a
-tissue-agnostic quantity, effect visibility: whether the model predicted any regulatory
-effect for a trait's variants at all ($\rho = \RHOVIS$ with expected-tissue enrichment,
-$P = \PVIS$). Much of that association is expected by construction, because predicted
-histone effects are strongly shared across tissues (mean inter-tissue correlation
-\INTERTISSUE{}), and visibility did not significantly predict the expected tissue's rank
-across traits ($\rho = \RHOVISRANK$, $P = \PVISRANK$). At the level of individual
-variants, however, the expected tissue ranked first \QHIGHRATIO{} times more often than a
-calibrated null among the most visible quartile of variants, against
-\QLOWRATIO{}--\QTHREERATIO{} times elsewhere (within-trait odds ratio \ORTOPQ{},
-$P = \PTOPQ$). Run matched against LDSC-SEG \citep{finucane2018seg}---same \NMATCH{}
-traits, same GWAS datasets, same \NTISSUE{} tissue definitions---the two methods tied on
-rank-1 recovery (\AGONE{} and \LDONE{} of \NMATCH{}), with LDSC-SEG ahead on top-three
-recovery (\LDTHREE{} versus \AGTHREE{}) and on rank-1 recoveries that were also
-significant (\LDONESIG{} versus \AGONESIG{}). Their failures are complementary: LDSC-SEG
-recovers the islet for type 2 diabetes where AlphaGenome ranks it \TWODAGRANK{}th, while
-AlphaGenome recovers artery for coronary artery disease where LDSC-SEG finds no
-significant tissue. On \NSAMEWRONG{} of the \NBOTHMISS{} traits defeating both, the
-methods independently pick the same wrong tissue, indicating our expected-tissue labels
-limit the benchmark. We conclude that a null tissue assignment from these models more
-often reflects undetected variant effects than absent tissue involvement, that the
-tissue-specific component of a predicted variant effect is small relative to the shared
-one, and that expanding assay coverage for under-measured tissues is unlikely, on its
-own, to fix it.
+Sequence-to-function models predict tissue-resolved regulatory activity from DNA, so they
+can be asked in which tissue an individual non-coding risk variant acts. We tested whether
+AlphaGenome recovers trait--tissue relationships established by orthogonal evidence,
+scoring fine-mapped variants from \NTRAITS{} GWAS of \NUNIQUE{} complex traits across
+\NTISSUE{} tissue groups against a shared background of \NBG{} variants. The pre-specified
+expected tissue ranked first for \NHITONE{} of \NTRAITS{} trait--GWAS pairs
+($P = \PHITONE$), within the top three for \NHITTHREE{}, and was significantly enriched
+for \NSIG{}. Recovery did not track how well the expected tissue is measured: track count
+was uncorrelated with enrichment ($\rho = \RHOTRACK$) or rank ($\rho = \RHOTRACKRANK$),
+although the test can exclude only a strong coverage effect. Enrichment did track a
+tissue-agnostic effect visibility ($\rho = \RHOVIS$), but largely by construction, because
+predicted histone effects are shared across tissues (mean inter-tissue correlation
+\INTERTISSUE{}); visibility did not predict the expected tissue's rank
+($\rho = \RHOVISRANK$, $P = \PVISRANK$), and at the variant level tissue information was
+modest and concentrated in the most visible variants (within-trait odds ratio \ORTOPQ{}).
+Matched against LDSC-SEG on the same \NMATCH{} GWAS and tissue definitions, the aggregate
+method was ahead (rank-1 recovery \LDONE{} versus \AGONE{}; top three \LDTHREE{} versus
+\AGTHREE{}). Its advantage was concentrated where per-variant effects are smallest: it
+placed brain first for both brain-expected traits ($P = \BMILDP$ and $\COGLDP$) and the
+islet first for type 2 diabetes, where AlphaGenome ranked them third, third and
+\TWODAGRANK{}th, whereas AlphaGenome recovered artery for coronary artery disease where
+LDSC-SEG found no significant tissue. On \NSAMEWRONG{} of the \NBOTHMISS{} traits
+defeating both, the methods chose the same wrong tissue, implicating the labels. A null
+per-variant tissue assignment therefore more often reflects undetected effects than absent
+tissue involvement, and the tissue-specific component of predicted effects is small
+relative to the shared one.
 \end{abstract}
 
 \section{Introduction}
@@ -105,14 +88,14 @@ for failure. The \emph{assay-coverage} hypothesis holds that a tissue is recover
 the model has seen enough experimental data for it. The \emph{detectability} hypothesis
 holds that recovery depends on whether the trait's variants produce predicted effects
 large enough to rank tissues at all, independently of which tissue is expected. These
-make opposite predictions for well-instrumented tissues paired with subtle traits. We find
-no support for the first and partial support for the second, with an important
-qualification: most of what the model predicts for a variant is shared across tissues,
-and the tissue-specific remainder is small.
+make opposite predictions for well-instrumented tissues paired with subtle traits. We find no
+support for the first and, from a matched comparison with the reference method, direct
+support for the second, with an important qualification: most of what the model predicts
+for a variant is shared across tissues, and the tissue-specific remainder is small.
 
 \section{Results}
 
-\subsection{Benchmark design}
+\subsection{Benchmark design}\label{sec:design}
 
 We assembled \NTRAITS{} trait--GWAS pairs covering \NUNIQUE{} traits (Appendix Table~\ref{tab:traits}) whose principal tissue
 is supported by prior literature, spanning liver, immune tissue, heart, artery, brain,
@@ -127,6 +110,16 @@ reported lead variants alone. In our panel \NSUSIE{} studies are SuSiE-based,
 hits (Appendix Table~\ref{tab:traits}). For the last group the highest-posterior variant
 is in practice the reported lead SNP, so for those traits the benchmark scores GWAS lead
 variants rather than fine-mapped causal candidates.
+
+Four datasets in the panel as first assembled were replaced after an internal review of
+the first complete analysis: two Million Veteran Program PheCode GWAS with fewer than four
+thousand cases (ulcerative colitis, and type 1 diabetes with ophthalmic manifestations),
+and the body mass index and cognition datasets, whose summary statistics are not
+distributed through the GWAS Catalog and which therefore could not enter the matched
+comparison of Section~\ref{sec:ldsc}. Each was replaced by the largest GWAS of the same
+trait with summary statistics ingested by Open Targets and available from the Catalog.
+The expected-tissue labels were not changed. The superseded datasets and their results
+are reported in Appendix Table~\ref{tab:superseded}.
 
 Two points about provenance, because the benchmark is easy to misread. First, the Open
 Targets Platform supplies \emph{only the variant list}. It makes no tissue predictions,
@@ -170,14 +163,16 @@ each pair, the proportion of variant resamples in which the expected tissue stay
 Figure~\ref{fig:heat} shows the trait-by-tissue matrix.
 
 Liver traits recovered liver (alanine aminotransferase $z = \ALTZ$), cardiac traits
-recovered heart, and platelet count and the Crohn's disease medication proxy recovered
-immune tissue.
-Rank and enrichment do not always agree: ulcerative colitis ranks the expected tissue
-first while showing no enrichment at all ($z \approx 0$), because when every tissue sits
-near zero the ordering is noise. We therefore report both, and we do not count ulcerative
-colitis as a success anywhere below: its GWAS has only \UCCASES{} cases, and its credible
-sets are almost all single variants at marginal significance (Appendix
-Table~\ref{tab:traits}), so the input variant set itself is suspect.
+recovered heart, and platelet count, ulcerative colitis, type 1 diabetes and the Crohn's
+disease medication proxy recovered immune tissue.
+Rank and
+enrichment do not always agree: atrial fibrillation and the larger T2D dataset rank the
+expected tissue first without its enrichment reaching significance, and when every tissue
+sits near zero the ordering is noise. We therefore report both. The superseded datasets
+make the same point from the other side: the two small PheCode GWAS in the original panel
+showed no enrichment in any tissue, and their large-consortium replacements both recover
+immune tissue with significant enrichment (Appendix Table~\ref{tab:superseded}). The
+benchmark tests the input variant set as much as the model.
 
 \input{results_table.tex}
 
@@ -195,8 +190,8 @@ If recovery were limited by how well a tissue is measured, the expected tissue's
 enrichment should rise with the number of tracks available for it. We find no evidence
 that it does. Across trait--GWAS pairs, enrichment was uncorrelated with the expected
 tissue's histone track count ($\rho = \RHOTRACK$, $P = \PTRACK$) and with its chromatin
-accessibility track count ($\rho = \RHOACC$, $P = \PACC$); both point estimates are, if
-anything, negative. The same holds for rank ($\rho = \RHOTRACKRANK$, $P = \PTRACKRANK$;
+accessibility track count ($\rho = \RHOACC$, $P = \PACC$); both point estimates are
+close to zero. The same holds for rank ($\rho = \RHOTRACKRANK$, $P = \PTRACKRANK$;
 accessibility $\rho = \RHOACCRANK$, $P = \PACCRANK$). This is a low-powered test: track
 count takes only eight distinct values across the \NTRAITS{} pairs, because traits that
 share an expected tissue share a count, and the 95\% confidence interval on the first
@@ -206,8 +201,8 @@ dependence, not a moderate one.
 The extremes make the point directly. Brain is among the best-instrumented groups
 (\BRAINHIST{} histone tracks, \BRAINFIVE{} of them among the five marks scored here, and
 \BRAINACC{} accessibility tracks), yet both brain-expected traits fail: body mass index
-ranks the brain \BMIRANK{}rd ($z = \BMIZ$) and the cognition/education/schizophrenia
-meta-analysis shows no brain enrichment at all ($z = \COGZ$). The pancreatic islet is the
+ranks the brain \BMIRANK{}rd ($z = \BMIZ$, $P = \BMIP$) and intelligence \COGRANK{}rd
+($z = \COGZ$, $P = \COGP$). The pancreatic islet is the
 sparsest group in the panel (\ISLETHIST{} histone tracks, \ISLETACC{} accessibility
 track, no ATAC), yet T2D ranks the islet first in the larger GWAS. That recovery is weak
 (non-significant, bootstrap support \TDBOOT{}) and is not reproduced in the second T2D
@@ -271,27 +266,31 @@ expression ourselves so that both methods partition the genome into identical ti
 groups, rather than comparing against the 205-annotation taxonomy of the published
 analysis. Table~\ref{tab:ldsc} gives the result.
 
-\textbf{Neither method dominates.} The expected tissue ranked first for \AGONE{} of
-\NMATCH{} traits under AlphaGenome and \LDONE{} of \NMATCH{} under LDSC-SEG, both far
-above the \CHANCEMATCH{} expected by chance ($P = \PMATCH$ each). LDSC-SEG holds the edge
-on top-three recovery (\LDTHREE{} versus \AGTHREE{}) and on rank-1 recoveries that are
-also significant for the expected tissue (\LDONESIG{} versus \AGONESIG{}; AlphaGenome's
-rank-1 calls for ulcerative colitis and atrial fibrillation are not significant). We
-expected the established method to dominate; it is ahead, but not by much.
+\textbf{LDSC-SEG is ahead.} The expected tissue ranked first for \LDONE{} of \NMATCH{}
+traits under LDSC-SEG and \AGONE{} of \NMATCH{} under AlphaGenome, both far above the
+\CHANCEMATCH{} expected by chance ($P = \PMATCH$ for AlphaGenome and smaller for
+LDSC-SEG). LDSC-SEG also leads on top-three recovery (\LDTHREE{} versus \AGTHREE{}) and
+on rank-1 recoveries that are also significant for the expected tissue (\LDONESIG{} versus
+\AGONESIG{}). The margin is consistent across measures but not large, and the two methods
+fail on different traits.
 
-What the methods have instead is \emph{complementary} failure, and the two sharpest cases
-point in opposite directions. For type 2 diabetes LDSC-SEG ranks the islet first
-($P = \TWODLDP$) where AlphaGenome ranks it \TWODAGRANK{}th---the aggregate method recovers
-islet biology the literature independently supports \citep{gaulton2010islet,
-pasquali2014enhancer, chiou2021islet} from variants whose individual effects AlphaGenome
-cannot resolve. That is the detectability account's clearest confirmation. For coronary
-artery disease the ordering reverses: AlphaGenome ranks artery first with significant
-enrichment ($q = \CADAGQ$) while LDSC-SEG ranks it \CADLDRANK{}rd behind lung and fat,
-with no tissue reaching significance (best $P = \CADLDTOPP$). Whatever separates success
-from failure, it is not that one method is uniformly better resolved. (Ulcerative colitis
-also splits the methods on rank, immune first under AlphaGenome and \UCLDRANK{}th under
-LDSC-SEG, but neither method finds any enrichment for it and we treat it as a joint
-failure of the input GWAS.)
+The failures are \emph{complementary}, and where the methods diverge the direction is
+informative. For the two brain-expected traits LDSC-SEG places brain first with strong
+significance (body mass index $P = \BMILDP$; intelligence $P = \COGLDP$) where
+AlphaGenome ranks it \BMIAGRANK{}rd and \COGAGRANK{}rd, behind fat and artery. For type 2
+diabetes LDSC-SEG ranks the islet first ($P = \TWODLDP$) where AlphaGenome ranks it
+\TWODAGRANK{}th. In all three cases the aggregate method recovers tissue biology the
+literature independently supports \citep{gaulton2010islet, pasquali2014enhancer,
+chiou2021islet} from GWAS whose individual fine-mapped variants AlphaGenome cannot
+resolve. These are the traits with the smallest per-variant effects, and this is the
+head-to-head test the detectability account required. For coronary artery disease the
+ordering reverses: AlphaGenome ranks artery first with significant enrichment
+($q = \CADAGQ$) while LDSC-SEG ranks it \CADLDRANK{}rd behind lung and fat, with no tissue
+reaching significance (best $P = \CADLDTOPP$). For type 1 diabetes both methods find
+immune signal, but LDSC-SEG places lung marginally ahead of immune tissue (immune
+$P = \TODLDP$), plausibly because bulk lung carries a substantial immune-cell expression
+signature. Whatever separates success from failure, it is not that one method is uniformly
+better resolved. 
 
 The two also fail \emph{together} informatively. Both methods miss on \NBOTHMISS{} traits, and on
 \NSAMEWRONG{} of those the methods independently choose the same wrong tissue: both rank
@@ -325,7 +324,9 @@ does not detect it in the fine-mapped variants. That upgrades our reading of T2D
 ``uninformative'' to a specific negative---per-variant prediction misses islet enrichment
 that aggregate heritability partitioning recovers from the same study---and is consistent
 with the instability across the two T2D datasets reflecting the model's detection
-threshold rather than a genuine absence of islet involvement.
+threshold rather than a genuine absence of islet involvement. The two brain-expected
+traits show the same signature without the instability: one dataset each, brain first
+under LDSC-SEG and third under AlphaGenome (Section~\ref{sec:ldsc}).
 
 One caveat compounds this. The larger dataset used islet epigenome maps in its own fine
 mapping \citep{mahajan2018finemap}. Open Targets has not ingested its summary statistics,
@@ -354,7 +355,11 @@ useful finding, because it redirects effort. Adding chromatin accessibility assa
 under-measured tissues would be a natural response to a coverage-limited failure; our
 results suggest it would not, by itself, rescue the traits that fail here, since the
 best-instrumented tissue in the panel hosts two of the clearest failures. The relevant
-axis is instead the size of the regulatory effects a trait's variants actually have.
+axis is instead the size of the regulatory effects a trait's variants actually have. The
+matched comparison makes this concrete: for body mass index, intelligence and type 2
+diabetes, the three misses whose variants are among the least visible to the model,
+LDSC-SEG recovers the expected tissue from the same GWAS, so the tissue signal is present
+in the data and absent only from the per-variant predictions.
 Highly polygenic traits---body mass index, cognition, T2D---are those whose individual
 variants have small effects, and they are among the ones that fail, although the pattern
 is not clean: platelet count is at least as polygenic and is recovered strongly. Two
@@ -363,8 +368,9 @@ variant may not be the causal one, since \NPICSTOP{} of our \NTRAITS{} variant s
 lead SNPs rather than fine-mapped candidates, and visibility rises weakly with posterior
 inclusion probability at the variant level ($\rho = \RHOVPIP$, $P = \PVPIP$); and the
 signal itself may be marginal, since visibility also rises with GWAS significance
-($\rho = \RHOVNEGP$ per variant, $P = \PVNEGP$) and the two least visible traits come
-from GWAS with fewer than four thousand cases. Beyond these, the brain failures may
+($\rho = \RHOVNEGP$ per variant, $P = \PVNEGP$) and the two datasets removed from the original panel after review, both from GWAS
+with fewer than four thousand cases, were the least visible of all (Appendix
+Table~\ref{tab:superseded}). Beyond these, the brain failures may
 reflect that the relevant cell types and developmental stages are poorly represented by
 bulk adult brain tracks. The detectability reading is consistent with independent reports
 that current sequence models capture promoter-proximal determinants well but distal
@@ -379,12 +385,10 @@ aminotransferase, and this may contribute to its low visibility.
 
 \subsection*{What would sharpen this}
 
-Three follow-ups would strengthen or overturn these conclusions. First, extend the
-matched comparison to brain-expected traits. The specific body mass index and cognition
-GWAS used here are not distributed with summary statistics through the GWAS Catalog, but
-other large GWAS of both traits are, and rerunning both methods on one of those is the
-obvious next step; this is the one place the detectability account remains untested
-against the reference method. Second,
+Three follow-ups would strengthen or overturn these conclusions. First, complete the
+matched comparison: the FinnGen Crohn's disease proxy, the DIAGRAM T2D dataset, platelet
+count and triglycerides have public summary statistics outside the GWAS Catalog and were
+not run through LDSC-SEG. Second,
 aggregate over full credible sets weighted by posterior probability instead of taking
 the top variant, which would quantify how much of the failure is fine-mapping
 instability---the near-disjoint T2D variant sets suggest this is substantial. Third,
@@ -410,35 +414,28 @@ alkaline phosphatase: liver and bone). The LDSC-SEG comparison contradicts two o
 (Section~\ref{sec:ldsc}); others may be equally contestable. We report rank rather than a
 binary hit partly for this reason. A benchmark with labels derived from an independent
 quantitative method, rather than assigned by hand, would be stronger.
-\item \textbf{Proxy phenotypes and underpowered GWAS.} Several traits are PheCode or
-medication-proxy definitions rather than curated case--control phenotypes. The type 1
-diabetes entry is the PheCode for type 1 diabetes \emph{with ophthalmic manifestations}
-(\TODCASES{} cases), the ulcerative colitis entry has \UCCASES{} cases, and the Crohn's
-disease entry is a FinnGen first-line-medication endpoint with \CROHNCASES{} cases, which
-is far broader than Crohn's disease. The cognition entry is a pleiotropic meta-analysis of
-cognitive ability, educational attainment and schizophrenia. Case counts and definitions
-are given in Table~\ref{tab:traits}. The two smallest GWAS yield credible sets that are
-almost all singletons at marginal significance, and their failures should be read as
-failures of the input rather than of the model.
+\item \textbf{Proxy phenotypes.} The Crohn's disease entry is a FinnGen
+first-line-medication endpoint with \CROHNCASES{} cases, far broader than Crohn's
+disease, and heart rate is a Million Veteran Program PheWAS trait. Case counts and
+definitions are given in Table~\ref{tab:traits}. Two PheCode datasets with fewer than
+four thousand cases were removed from the panel after review (Appendix
+Table~\ref{tab:superseded}); their credible sets were almost all singletons at marginal
+significance, and their failures were failures of the input rather than of the model.
 \item \textbf{Rank is unstable when enrichment is flat.} Where all tissues sit near
 zero, the top-ranked tissue is arbitrary; this is why we report enrichment and
 significance alongside rank.
 \item \textbf{Skewed effect distributions.} Median per-variant scores are near or below
 zero for every trait; enrichment is driven by a minority of loci. Means are appropriate
 for enrichment but describe the tail.
-\item \textbf{The matched comparison contains no brain traits.} Summary statistics for
-the body mass index and cognition GWAS used here are not distributed through the GWAS
-Catalog, so the two traits that fail most clearly under AlphaGenome were not tested
-against LDSC-SEG; other GWAS of both traits with public summary statistics exist and
-should be used. Type 2 diabetes
-is the substitute case, but the detectability account's strongest evidence remains
-untested head-to-head.
+\item \textbf{Four traits lack a matched comparison.} The FinnGen Crohn's disease
+proxy, the DIAGRAM T2D dataset, platelet count and triglycerides have summary statistics
+outside the GWAS Catalog and were not run through LDSC-SEG.
 \item \textbf{The LDSC-SEG islet annotation is bulk pancreas.} GTEx has no islet tissue,
 so on the LDSC-SEG side the islet group is whole pancreas---the same cell-type dilution
 affecting the AlphaGenome side, and a conservative bias for the diabetes result.
 \item \textbf{Some LDSC-SEG ranks rest on non-significant coefficients.} Where no tissue
-reaches significance the ordering is arbitrary, exactly as for AlphaGenome; ulcerative
-colitis and coronary artery disease are the clearest cases.
+reaches significance the ordering is arbitrary, exactly as for AlphaGenome; coronary
+artery disease is the clearest case.
 \item \textbf{LDSC required patching to run.} The Python~3 port used here contained
 defects that silently altered results: chromosome-split LD scores were read for a single
 chromosome instead of 22, and cell-type $P$-values were two-tailed where the published
@@ -472,9 +469,11 @@ probability. Signals whose highest-posterior variant had a coding most-severe co
 stop, frameshift, synonymous, canonical splice, in-frame) were dropped rather than
 replaced by the next non-coding member. Remaining variants were ordered by signal
 significance and capped at \NCAP{} per trait. Fine-mapping method and confidence for each
-study were retrieved from the same API and are listed in Table~\ref{tab:traits}. The
-cognition study was retrieved under the schizophrenia ontology term; it is the Lam et al.\
-pleiotropic meta-analysis of cognitive ability, educational attainment and schizophrenia.
+study were retrieved from the same API and are listed in Table~\ref{tab:traits}.
+Replacement datasets (Section~\ref{sec:design}) were chosen as the largest GWAS of the
+trait with summary statistics ingested by Open Targets and harmonised summary statistics
+on the GWAS Catalog FTP site; the superseded datasets were scored identically and are
+reported in Appendix~\ref{app:superseded}.
 
 \paragraph{Background construction.} For each non-coding T2D and LDL-cholesterol signal
 we drew two positions offset by \SIrange{50}{400}{\kilo\bp} in either direction on the
@@ -529,5 +528,8 @@ design, scientific claims and interpretation are the author's.
 \input{traits_table.tex}
 \section{Track census}
 \input{tracks_table.tex}
+\clearpage
+\section{Superseded datasets}\label{app:superseded}
+\input{superseded_table.tex}
 
 \end{document}

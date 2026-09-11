@@ -262,5 +262,61 @@
    "PICS fine-mapped credible set extracted from summary statistics": 9,
    "SuSiE fine-mapped credible set with out-of-sample LD": 112
   }
+ },
+ "GCST90446794": {
+  "hasSumstats": true,
+  "nSamples": 375508,
+  "nCases": 23252,
+  "traitFromSource": "Ulcerative colitis",
+  "nCredibleSets": 170,
+  "methods": {
+   "SuSiE-inf": 162,
+   "PICS": 8
+  },
+  "confidence": {
+   "SuSiE fine-mapped credible set with out-of-sample LD": 162,
+   "PICS fine-mapped credible set extracted from summary statistics": 8
+  }
+ },
+ "GCST90013445": {
+  "hasSumstats": true,
+  "nSamples": 59527,
+  "nCases": 22153,
+  "traitFromSource": "Type 1 diabetes",
+  "nCredibleSets": 72,
+  "methods": {
+   "PICS": 72
+  },
+  "confidence": {
+   "PICS fine-mapped credible set extracted from summary statistics": 72
+  }
+ },
+ "GCST90474606": {
+  "hasSumstats": true,
+  "nSamples": 456892,
+  "nCases": 0,
+  "traitFromSource": "Body mass index (BMI) (UKB data field 21001)",
+  "nCredibleSets": 629,
+  "methods": {
+   "PICS": 500
+  },
+  "confidence": {
+   "PICS fine-mapped credible set extracted from summary statistics": 500
+  }
+ },
+ "GCST006250": {
+  "hasSumstats": true,
+  "nSamples": 269867,
+  "nCases": 0,
+  "traitFromSource": "Intelligence",
+  "nCredibleSets": 180,
+  "methods": {
+   "SuSiE-inf": 171,
+   "PICS": 9
+  },
+  "confidence": {
+   "SuSiE fine-mapped credible set with out-of-sample LD": 171,
+   "PICS fine-mapped credible set extracted from summary statistics": 9
+  }
  }
 }

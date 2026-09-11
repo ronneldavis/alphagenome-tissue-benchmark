@@ -1,0 +1,9 @@
+\begin{table}[htbp]\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\caption{Datasets of the originally assembled panel that were replaced after internal review, with their results under the same scoring. Rank, $z_{\text{exp}}$ and $P$ are as in Table~\ref{tab:results}. These results are superseded and are not part of any statistic in the main text.}\label{tab:superseded}
+\begin{tabular}{p{4.6cm}lrrlrrp{5.2cm}}\toprule
+Original dataset & Expected & $n$ & Rank & Top & $z_{\text{exp}}$ & $P$ & Reason for replacement \\ \midrule
+Ulcerative colitis, PheCode 555.21 (Verma 2024, \texttt{GCST90480318}) & Immune & 149 & 1 & Immune & $-0.01$ & 0.99 & 2{,}312 cases; credible sets almost all single variants at marginal significance. Replaced by Liu 2023 (23{,}252 cases). \\
+Type 1 diabetes with ophthalmic manifestations, PheCode 250.13 (Verma 2024, \texttt{GCST90479877}) & Immune & 72 & 7 & Skin & 0.06 & 0.67 & Sub-phenotype with 3{,}569 cases. Replaced by Robertson 2021 (22{,}153 cases). \\
+Body mass index (Kichaev 2019, \texttt{GCST007039}) & Brain & 150 & 3 & Fat & 0.10 & 0.80 & Functionally re-weighted GWAS; credible sets built around reported top hits; no summary statistics through the GWAS Catalog, so no matched LDSC-SEG run was possible. Replaced by UK Biobank WGS 2025. \\
+Cognitive ability / education / schizophrenia pleiotropy (Lam 2019, \texttt{GCST008595}) & Brain & 150 & 2 & Immune & $-0.06$ & 0.82 & Pleiotropic meta-analysis retrieved under the schizophrenia term; credible sets built around reported top hits; no summary statistics through the GWAS Catalog. Replaced by Savage 2018 intelligence. \\
+\bottomrule\end{tabular}\end{table}

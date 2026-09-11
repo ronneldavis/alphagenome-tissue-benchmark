@@ -1,8 +1,11 @@
 """Review-stage analyses added after internal review (Sept 2026).
 
-Usage: python scripts/37_review_analyses.py <SCORE_DIR> <PAPER_DIR>
+Usage: python scripts/37_review_analyses.py <SCORE_DIR> <PAPER_DIR> <PANEL_JSON>
   SCORE_DIR holds bg_scores.npz, T_<study>_scores.npz, t2d_scores.npz and the *_variants.csv files
-  produced by 22_run_all.py / 11_background.py; PAPER_DIR is this repository.
+  produced by 22_run_all.py / 11_background.py; PAPER_DIR is this repository. PANEL_JSON is the
+  panel definition file (e.g. data/panel_v1.json): a list of {trait, label, study, expected,
+  source, file} dicts, used here for the trait->file mapping (FILES) and the trait->display-label
+  mapping (LABEL, taken only where label != trait).
 Writes: numbers_extra.tex, results_table.tex (with bootstrap column), traits_table.tex (with GWAS
 size, case counts and fine-mapping regime), tracks_table.tex (with five-mark histone column),
 fig_heatmap.pdf/png (relabelled), ldsc_table.tex (relabelled), data/pervariant_summary.csv.
@@ -12,15 +15,13 @@ from scipy.stats import spearmanr, mannwhitneyu, binomtest
 import statsmodels.formula.api as smf
 import matplotlib; matplotlib.use("Agg"); import matplotlib.pyplot as plt
 from matplotlib.colors import TwoSlopeNorm
-SP, P = sys.argv[1], sys.argv[2]; D = f"{P}/data"
+SP, P, PANEL = sys.argv[1], sys.argv[2], sys.argv[3]; D = f"{P}/data"
+PANEL_ROWS = json.load(open(PANEL))
 MARKS=['H3K27ac','H3K36me3','H3K4me1','H3K4me3','H3K9ac']
 GR=['ISLET','LIVER','ADIPOSE','MUSCLE','BRAIN','IMMUNE','HEART','ARTERY','LUNG','INTESTINE','SKIN']
 NICE={'ISLET':'Islet','LIVER':'Liver','ADIPOSE':'Fat','MUSCLE':'Muscle','BRAIN':'Brain','IMMUNE':'Immune',
       'HEART':'Heart','ARTERY':'Artery','LUNG':'Lung','INTESTINE':'Intestine','SKIN':'Skin'}
-LABEL={'Type 1 diabetes (PheCode)':'Type 1 diabetes, ophthalmic (PheCode 250.13)',
-       'Ulcerative colitis (PheCode)':'Ulcerative colitis (PheCode 555.21)',
-       "Crohn's disease (medication proxy)":"Crohn's disease medication (FinnGen proxy)",
-       'Cognitive ability / education':'Cognition / education / schizophrenia (pleiotropy)'}
+LABEL={e['trait']:e['label'] for e in PANEL_ROWS if e['label']!=e['trait']}
 lab=lambda t: LABEL.get(t,t)
 esc=lambda s:str(s).replace('&','\\&').replace('_','\\_').replace('%','\\%')
 def sci(p):
@@ -35,15 +36,13 @@ NR={g:(BG[:,IDX[g]].mean(1).mean(), BG[:,IDX[g]].mean(1).std()) for g in GR}
 ZB=np.column_stack([(BG[:,IDX[g]].mean(1)-NR[g][0])/NR[g][1] for g in GR])
 null_rate={g:float((ZB.argmax(1)==i).mean()) for i,g in enumerate(GR)}
 bgv=BG[:,ALL].mean(1); mu,sd=bgv.mean(),bgv.std()
-FILES={'Type 2 diabetes':'T_GCST009379','Free cholesterol in large LDL':'T_GCST90501150',
-'HDL cholesterol':'T_GCST90501112','Triglycerides':'T_GCST006613','Alanine aminotransferase':'T_GCST90474304',
-'Alkaline phosphatase':'T_GCST90018942',"Crohn's disease (medication proxy)":'T_FINNGEN_R12_RX_CROHN_1STLINE',
-'Ulcerative colitis (PheCode)':'T_GCST90480318','Type 1 diabetes (PheCode)':'T_GCST90479877',
-'Asthma':'T_GCST010043','Platelet count':'T_GCST90662907','Atrial fibrillation':'T_GCST90624411',
-'Heart rate':'T_GCST90480666','Coronary artery disease':'T_GCST90132314','Systolic blood pressure':'T_GCST90000066',
-'Body mass index':'T_GCST007039','Cognitive ability / education':'T_GCST008595',
-'Lung function (FEV1/FVC)':'T_GCST90244094','Atopic dermatitis':'T_GCST90503108',
-'Type 2 diabetes (replication)':'t2d'}
+FILES={e['trait']:e['file'] for e in PANEL_ROWS}
+# NOTE: the bootstrap loop below draws from one shared `rng`, in FILES's
+# iteration order (= the panel file's row order), so the *order of rows in
+# the panel JSON* is part of this script's reproducibility contract -- do
+# not reorder an existing panel file's rows, or every bootstrap proportion
+# from that row onward will change (a real fixed-seed effect, not a bug).
+# See scripts/README.md.
 R=pd.read_csv(f"{D}/bench_final.csv").set_index('trait')
 rng=np.random.default_rng(1); B=2000
 rows=[]; allv=[]; Zall=[]
@@ -113,14 +112,14 @@ ad=ld('GCST90503108'); M['ADLDP']=sci(float(ad.loc['IMMUNE','Coefficient_P_value
 cad=ld('GCST90132314').sort_values('Coefficient_P_value'); M['CADLDTOPP']=sci(float(cad.Coefficient_P_value.iloc[0]))
 M['CADLDRANK']=int(list(cad.index).index('ARTERY')+1); M['CADAGQ']=f"{R.loc['Coronary artery disease','q_exp']:.3f}"
 # ---- provenance
-FM=json.load(open(f"{D}/finemapping_provenance.json")); SM=json.load(open(f"{D}/study_meta.json")); ACC=json.load(open(f"{D}/accessions.json"))
+FM=json.load(open(f"{D}/finemapping_provenance.json")); SM=json.load(open(f"{D}/study_meta.json")); SID={e["trait"]:e["study"] for e in json.load(open(sys.argv[3]))}  # accession per trait, from the panel file
 def regime(s):
     conf=FM[s]['confidence']; tot=sum(conf.values())
     top=max(conf,key=conf.get); share=conf[top]/tot
     name={'PICS fine-mapped credible set based on reported top hit':'PICS (top hits)','PICS fine-mapped credible set extracted from summary statistics':'PICS (sumstats)',
           'SuSiE fine-mapped credible set with out-of-sample LD':'SuSiE-inf','SuSiE fine-mapped credible set with in-sample LD':'SuSiE'}[top]
     return name if share>0.99 else f"{name} ({100*share:.0f}\\%)"
-reg={t:regime(ACC[t].replace('\\_','_')+('_1STLINE' if 'FINNGEN' in ACC[t] else '')) for t in R.index}
+reg={t:regime(SID[t]) for t in R.index}
 M['NSUSIE']=sum(v.startswith('SuSiE') for v in reg.values()); M['NPICSSUM']=sum(v.startswith('PICS (sumstats') for v in reg.values()); M['NPICSTOP']=sum(v.startswith('PICS (top') for v in reg.values())
 M['UCCASES']=f"{FM['GCST90480318']['nCases']:,}"; M['TODCASES']=f"{FM['GCST90479877']['nCases']:,}"; M['CROHNCASES']=f"{FM['FINNGEN_R12_RX_CROHN_1STLINE']['nCases']:,}"
 M['BRAINFIVE']=FIVE['BRAIN']; M['ISLETFIVE']=FIVE['ISLET']
@@ -140,7 +139,7 @@ L=["\\begingroup\\footnotesize\\setlength{\\tabcolsep}{4pt}",
 "\\toprule Trait & Expected & Accession & Source & $N$ (cases) & Fine-mapping & $n$ \\\\ \\midrule \\endfirsthead",
 "\\toprule Trait & Expected & Accession & Source & $N$ (cases) & Fine-mapping & $n$ \\\\ \\midrule \\endhead"]
 for t,r in R.sort_values('trait').iterrows():
-    sid=ACC[t].replace('\\_','_')+('_1STLINE' if 'FINNGEN' in ACC[t] else ''); sm=FM[sid]
+    sid=SID[t]; sm=FM[sid]
     N=f"{sm['nSamples']:,}"+(f" ({sm['nCases']:,})" if sm['nCases'] else "")
     L.append(f"{esc(lab(t))} & {NICE[r.expected]} & \\texttt{{{esc(sid).replace(chr(92)+'_',chr(92)+'_'+chr(92)+'allowbreak ')}}} & {esc(r.source)} & {N} & {reg[t]} & {int(r.n)} \\\\")
 L+=["\\bottomrule\\end{longtable}\\endgroup"]; open(f"{P}/traits_table.tex","w").write("\n".join(L))

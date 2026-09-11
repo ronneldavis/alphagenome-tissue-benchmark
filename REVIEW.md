@@ -1,5 +1,27 @@
 # Internal review: "Tissue localisation by a sequence-to-function model tracks variant effect detectability, not tissue assay depth"
 
+## Revision status (evening of 10 September 2026)
+
+The author's decisions on the first review were: soften the title, replace the two underpowered datasets, run the brain head-to-head, and deposit the code and data on GitHub. Status:
+
+- **Title** now reads "Per-variant tissue assignment by a sequence-to-function model is limited by effect detectability more than by assay coverage".
+- **Panel revision.** Four datasets were replaced (all chosen as the largest GWAS of the trait with summary statistics both ingested by Open Targets and available from the GWAS Catalog): ulcerative colitis → Liu 2023 (GCST90446794, 23,252 cases); type 1 diabetes → Robertson 2021 (GCST90013445, 22,153 cases); body mass index → UK Biobank WGS 2025 (GCST90474606, 456,892 people); cognition → Savage 2018 intelligence (GCST006250, 269,867 people). The superseded datasets and their results are kept in a new Appendix C so nothing is hidden. Scoring used the same script logic as before (`scripts/38_score_panel_v2.py`), 516 variants, no failures.
+- **Results on the revised panel** (`data/panel_v2.json`): expected tissue ranked first for 11 of 20 pairs (P = 2.7e-7), top three for 16, significantly enriched for 14. Both immune replacements recover immune tissue with significant enrichment (ulcerative colitis z = 0.50, P = 0.004; type 1 diabetes z = 0.82, P = 0.03), where the small PheCode datasets they replaced showed nothing. Both brain replacements still miss: BMI ranks brain 3rd (z = 0.29, P = 0.19), intelligence 3rd (z = 0.15, P = 0.87). The coverage correlations are now essentially zero (rho = -0.01 and +0.07; CI on the first -0.45 to +0.43). Visibility still does not predict rank across traits (rho = 0.31, P = 0.19); the within-trait per-variant effect remains (top-quartile odds ratio 1.45, P = 0.002; 1.78-fold excess versus the calibrated null in the top quartile).
+- **Pipeline.** `scripts/39_rebuild.py <panel.json> .` now regenerates every benchmark file and `numbers.tex` from a panel definition, validated to reproduce the original outputs byte-for-byte on `data/panel_v1.json`; `scripts/37_review_analyses.py scores . <panel.json>` regenerates the review-stage numbers and tables. See `scripts/README.md`.
+- **GitHub.** https://github.com/ronneldavis/alphagenome-tissue-benchmark (public). The current revision will be pushed once the LDSC runs are in.
+- **LDSC-SEG for the four new datasets: done**, on the same GWAS and the same 11 tissue definitions (`ldsc/RUN_V2.md` has URLs, column choices, SNP counts and timings). Results: ulcerative colitis, immune first (P = 0.0017); type 1 diabetes, lung first and immune second (P = 0.016; bulk lung carries an immune expression signature); body mass index, brain first (P = 0.0016); intelligence, brain first (P = 2.4e-4). The matched comparison now covers 16 traits: LDSC-SEG ranks the expected tissue first for 10, AlphaGenome for 8; top three 15 versus 13; rank-1 and significant 10 versus 7. Both methods miss on 4 traits and pick the same wrong tissue on 2 (HDL cholesterol, atopic dermatitis).
+- **What this means for the paper.** This was the test the thesis needed, and it passed: for the three traits where AlphaGenome misses and whose variants are least visible to it (BMI, intelligence, T2D), LDSC-SEG recovers the expected tissue from the same GWAS. The tissue signal is in the data; the per-variant predictions do not carry it. The abstract, introduction, Sections 2.5 and 2.6 and the Discussion now say this, and "Neither method dominates" became "LDSC-SEG is ahead", which the numbers require. The one case in AlphaGenome's favour remains coronary artery disease.
+- **Abstract** rewritten and shortened to roughly 300 words. Cut further once you know the target journal's limit.
+
+### Decisions still open
+1. Target journal (sets the abstract limit and the format).
+2. License for the repository (README says "to be decided").
+3. Zenodo DOI for the deposit, to cite in Data availability, once you archive the GitHub repository.
+
+The review of the first version follows unchanged.
+
+## Review of the first version
+
 Reviewed 10 September 2026 against the LaTeX source, the data in `data/`, the LDSC-SEG result files in `ldsc/results/`, the raw AlphaGenome score matrices (now copied to `scores/`), the GWAS Catalog and Open Targets APIs, and CrossRef.
 
 ## Verdict
