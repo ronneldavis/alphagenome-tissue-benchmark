@@ -7,6 +7,7 @@
 \usepackage{array}
 \usepackage{authblk}
 \usepackage[hidelinks]{hyperref}
+\usepackage{url}
 \usepackage[round]{natbib}
 \usepackage{caption}
 \captionsetup{font=small,labelfont=bf}
@@ -20,7 +21,7 @@
 limited by effect detectability more than by assay coverage}
 
 \author[1]{Ronnel Davis}
-\affil[1]{\small Independent researcher. Correspondence: \texttt{info@onvo.ai}}
+\affil[1]{\small Independent researcher. Correspondence: \texttt{ronnel@onvo.ai}}
 \date{\today}
 
 \begin{document}
@@ -513,8 +514,9 @@ principal component of that matrix. These analyses are implemented in
 
 \paragraph{Data availability.} All inputs are public: GWAS summary statistics via the
 accessions in Table~\ref{tab:traits}, fine-mapped credible sets via the Open Targets
-Platform API, and AlphaGenome predictions via the model's public API. Analysis scripts
-and derived score matrices are available from the author on request.
+Platform API, and AlphaGenome predictions via the model's public API. Analysis scripts,
+derived score matrices, the LDSC-SEG results and the exact panel definitions are at
+\url{https://github.com/ronneldavis/alphagenome-tissue-benchmark}.
 
 \section*{Acknowledgements}
 Analysis was performed with assistance from Claude Code (Anthropic). The benchmark
